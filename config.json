@@ -1,0 +1,6 @@
+{
+  "components" : [
+    { "path": "component1.md", "label": "Component 1"},
+    { "path": "component2.md", "label": "Component 2"}
+  ]
+}
