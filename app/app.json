@@ -1,0 +1,15 @@
+{
+  "name": "Example App",
+  "description": "An example private app",
+  "scopes": [],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": ""
+        }
+      ]
+    }
+  }
+}
