@@ -1,0 +1,8 @@
+{
+  "components": [
+    { "path": "app", "label": "App", "insertPath": "./", "isFile": false, "type": "PRIVATE_APP"},
+    { "path": "example.functions", "label": "Serverless function", "insertPath": "./", "isFile": false, "type": "APP_FUNCTION"},
+    { "path": "crm-card-side.js", "label": "CRM card (side panel)", "insertPath": "./", "isFile": true, "type": "CRM_CARD_V2"},
+    { "path": "crm-card-middle.js", "label": "CRM card (middle panel)", "insertPath": "./", "isFile": true, "type": "CRM_CARD_V2"}
+  ]
+}
