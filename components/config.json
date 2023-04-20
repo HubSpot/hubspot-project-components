@@ -1,8 +1,6 @@
 {
   "components": [
-    { "path": "components/app", "label": "App", "insertPath": "./", "isFile": false, "extension": null},
-    { "path": "components/example.functions", "label": "Serverless function", "insertPath": "./", "isFile": false, "extension": "functions"},
-    { "path": "components/crm-card-side.js", "label": "CRM card (side panel)", "insertPath": "./", "isFile": true, "extension": "js"},
-    { "path": "components/crm-card-middle.js", "label": "CRM card (middle panel)", "insertPath": "./", "isFile": true, "extension": "js"}
+    { "path": "components/app-crm-card-middle", "label": "App (CRM card - middle panel)", "insertPath": "./"},
+    { "path": "components/app-crm-card-side", "label": "App (CRM card - side panel)", "insertPath": "./"}
   ]
 }

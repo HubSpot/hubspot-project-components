@@ -1,0 +1,13 @@
+{
+  "runtime": "nodejs16.x",
+  "version": "1.0",
+  "appFunctions": {
+    "crm-card-side": {
+      "file": "crm-card-side.js",
+      "secrets": []
+    },
+    "action-feedback-banner-side": {
+      "file": "action-feedback-banner-side.js"
+    }
+  }
+}

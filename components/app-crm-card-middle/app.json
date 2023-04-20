@@ -1,0 +1,15 @@
+{
+  "name": "Success and error banners - middle",
+  "description": "",
+  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./crm-card-middle.json"
+        }
+      ]
+    }
+  }
+}
