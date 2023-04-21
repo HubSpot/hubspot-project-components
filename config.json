@@ -4,6 +4,17 @@
   { "path": "components/app-crm-card-side", "label": "App (CRM card - side panel)", "insertPath": "./"}
 ],
 "projects": [
-  { "path": "projects/getting-started-template", "label": "Getting Started Template", "insertPath": "./"}
+  {
+    "name": "no-template",
+    "label": "No template",
+    "path": null,
+    "insertPath": null
+  },
+  {
+    "name": "getting-started",
+    "label": "Getting started",
+    "path": "projects/getting-started-template",
+    "insertPath": "./"
+  }
 ]
 }
