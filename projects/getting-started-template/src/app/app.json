@@ -1,0 +1,15 @@
+{
+  "name": "Example App",
+  "description": "An example private app that contains a single card extension.",
+  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./example-card.json"
+        }
+      ]
+    }
+  }
+}
