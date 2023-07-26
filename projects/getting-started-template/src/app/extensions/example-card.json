@@ -2,7 +2,7 @@
   "type": "crm-card",
   "data": {
     "title": "Example Card",
-    "uid": "getting-started-example",
+    "uid": "getting_started_example",
     "location": "crm.record.tab",
     "module": {
       "file": "Example.jsx"
