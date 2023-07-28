@@ -1,16 +1,22 @@
 {
   "projects": [
     {
-      "name": "no-template",
-      "label": "No template",
+      "name": "getting-started",
+      "label": "Use basic CRM extension card sample project (files only)",
+      "path": "projects/getting-started-template",
+      "insertPath": "./"
+    },
+    {
+      "name": "sample-app-template",
+      "label": "Use deal summary card sample project (files + instructions)",
       "path": null,
       "insertPath": null
     },
     {
-      "name": "getting-started",
-      "label": "Get Started with UI Extensions",
-      "path": "projects/getting-started-template",
-      "insertPath": "./"
+      "name": "no-template",
+      "label": "No, start from scratch",
+      "path": null,
+      "insertPath": null
     }
   ]
 }
