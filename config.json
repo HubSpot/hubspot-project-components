@@ -9,8 +9,8 @@
     {
       "name": "sample-app-template",
       "label": "Use deal summary card sample project (files + instructions)",
-      "path": null,
-      "insertPath": null
+      "path": "projects/deals-summary",
+      "insertPath": "./"
     },
     {
       "name": "no-template",
