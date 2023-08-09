@@ -7,8 +7,8 @@
   {
     "name": "no-template",
     "label": "No template",
-    "path": null,
-    "insertPath": null
+    "path": "projects/no-template",
+    "insertPath": "./"
   },
   {
     "name": "getting-started",
