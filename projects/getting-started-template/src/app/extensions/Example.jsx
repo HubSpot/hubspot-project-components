@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Divider,
   Link,
@@ -7,7 +7,7 @@ import {
   Input,
   Stack,
   hubspot,
-} from '@hubspot/ui-extensions';
+} from "@hubspot/ui-extensions";
 
 // Define the extension to be run within the Hubspot CRM
 hubspot.extend(({ context, runServerlessFunction, actions }) => (
@@ -20,13 +20,12 @@ hubspot.extend(({ context, runServerlessFunction, actions }) => (
 
 // Define the Extension component, taking in runServerless, context, & sendAlert as props
 const Extension = ({ context, runServerless, sendAlert }) => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   // Call serverless function to execute with parameters.
-  // The name `myFunc` as per configurations inside `serverless.json`
-
-  const run = () => {
-    runServerless({ name: 'myFunc', parameters: { text: text } }).then((resp) =>
+  // The `myFunc` function name is configured inside `serverless.json`
+  const handleClick = () => {
+    runServerless({ name: "myFunc", parameters: { text: text } }).then((resp) =>
       sendAlert({ message: resp.response })
     );
   };
@@ -34,7 +33,7 @@ const Extension = ({ context, runServerless, sendAlert }) => {
   return (
     <>
       <Text>
-        <Text format={{ fontWeight: 'bold' }}>
+        <Text format={{ fontWeight: "bold" }}>
           Your first UI extension is ready!
         </Text>
         Congratulations, {context.user.firstName}! You just deployed your first
@@ -44,30 +43,30 @@ const Extension = ({ context, runServerless, sendAlert }) => {
       </Text>
       <Stack>
         <Input name="text" label="Send" onInput={(t) => setText(t)} />
-        <Button type="submit" onClick={run}>
+        <Button type="submit" onClick={handleClick}>
           Click me
         </Button>
       </Stack>
       <Divider />
       <Stack>
         <Text>
-          What now? Explore all available{' '}
+          What now? Explore all available{" "}
           <Link href="https://developers.hubspot.com/docs/platform/ui-extension-components">
             UI components
           </Link>
-          , get an overview of{' '}
+          , get an overview of{" "}
           <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-overview">
             UI extensions
           </Link>
-          , learn how to{' '}
+          , learn how to{" "}
           <Link href="https://developers.hubspot.com/docs/platform/create-ui-extensions">
             add a new custom card
           </Link>
-          , jump right in with our{' '}
+          , jump right in with our{" "}
           <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-quickstart">
             Quickstart Guide
           </Link>
-          , or check out our{' '}
+          , or check out our{" "}
           <Link href="https://github.com/HubSpot/ui-extensions-react-examples">
             code Samples
           </Link>

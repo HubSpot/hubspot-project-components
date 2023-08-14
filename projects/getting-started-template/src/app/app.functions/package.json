@@ -1,8 +1,6 @@
 {
-  "name": "example-function",
+  "name": "hubspot-example-function",
   "version": "0.1.0",
-  "description": "",
-  "main": "example-function.js",
   "author": "HubSpot",
   "license": "MIT",
   "dependencies": {

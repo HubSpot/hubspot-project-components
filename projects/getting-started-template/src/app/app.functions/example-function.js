@@ -1,9 +1,10 @@
 exports.main = async (context = {}, sendResponse) => {
   const { text } = context.parameters;
 
-  const ret = `This is coming from a serverless function! You entered: ${text}`;
+  const response = `This is coming from a serverless function! You entered: ${text}`;
+
   try {
-    sendResponse(ret);
+    sendResponse(response);
   } catch (error) {
     sendResponse(error);
   }
