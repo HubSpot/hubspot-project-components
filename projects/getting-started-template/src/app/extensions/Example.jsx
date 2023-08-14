@@ -5,7 +5,7 @@ import {
   Button,
   Text,
   Input,
-  Stack,
+  Flex,
   hubspot,
 } from "@hubspot/ui-extensions";
 
@@ -41,38 +41,36 @@ const Extension = ({ context, runServerless, sendAlert }) => {
         parameters from your React frontend to the serverless function and get a
         response back.
       </Text>
-      <Stack>
+      <Flex direction="row" align="end" gap="small">
         <Input name="text" label="Send" onInput={(t) => setText(t)} />
         <Button type="submit" onClick={handleClick}>
           Click me
         </Button>
-      </Stack>
+      </Flex>
       <Divider />
-      <Stack>
-        <Text>
-          What now? Explore all available{" "}
-          <Link href="https://developers.hubspot.com/docs/platform/ui-extension-components">
-            UI components
-          </Link>
-          , get an overview of{" "}
-          <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-overview">
-            UI extensions
-          </Link>
-          , learn how to{" "}
-          <Link href="https://developers.hubspot.com/docs/platform/create-ui-extensions">
-            add a new custom card
-          </Link>
-          , jump right in with our{" "}
-          <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-quickstart">
-            Quickstart Guide
-          </Link>
-          , or check out our{" "}
-          <Link href="https://github.com/HubSpot/ui-extensions-react-examples">
-            code Samples
-          </Link>
-          .
-        </Text>
-      </Stack>
+      <Text>
+        What now? Explore all available{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extension-components">
+          UI components
+        </Link>
+        , get an overview of{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-overview">
+          UI extensions
+        </Link>
+        , learn how to{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/create-ui-extensions">
+          add a new custom card
+        </Link>
+        , jump right in with our{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-quickstart">
+          Quickstart Guide
+        </Link>
+        , or check out our{" "}
+        <Link href="https://github.com/HubSpot/ui-extensions-react-examples">
+          code Samples
+        </Link>
+        .
+      </Text>
     </>
   );
 };
