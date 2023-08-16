@@ -2,8 +2,8 @@
   "runtime": "nodejs16.x",
   "version": "1.0",
   "appFunctions": {
-    "crm-card": {
-      "file": "example-card.js",
+    "myFunc": {
+      "file": "example-function.js",
       "secrets": []
     }
   }
