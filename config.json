@@ -1,13 +1,8 @@
 {
   "components": [
     {
-      "path": "components/app-crm-card-middle",
-      "label": "App (CRM card - middle panel)",
-      "insertPath": "./"
-    },
-    {
-      "path": "components/app-crm-card-side",
-      "label": "App (CRM card - side panel)",
+      "path": "components/example-app",
+      "label": "Example React App",
       "insertPath": "./"
     }
   ],
