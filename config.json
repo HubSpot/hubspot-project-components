@@ -2,20 +2,20 @@
   "components": [
     {
       "path": "components/example-app",
-      "label": "Example React App",
+      "label": "Example react app",
       "insertPath": "./"
     }
   ],
   "projects": [
     {
       "name": "getting-started",
-      "label": "Use CRM getting started project",
+      "label": "CRM getting started project",
       "path": "projects/getting-started-template",
       "insertPath": "./"
     },
     {
       "name": "no-template",
-      "label": "No, start from scratch",
+      "label": "<Create an empty project (no template)>",
       "path": "projects/no-template",
       "insertPath": "./"
     }
