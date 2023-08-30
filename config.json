@@ -1,26 +1,21 @@
 {
   "components": [
     {
-      "path": "components/app-crm-card-middle",
-      "label": "App (CRM card - middle panel)",
-      "insertPath": "./"
-    },
-    {
-      "path": "components/app-crm-card-side",
-      "label": "App (CRM card - side panel)",
+      "path": "components/example-app",
+      "label": "Example react app",
       "insertPath": "./"
     }
   ],
   "projects": [
     {
       "name": "getting-started",
-      "label": "Use CRM getting started project",
+      "label": "CRM getting started project",
       "path": "projects/getting-started-template",
       "insertPath": "./"
     },
     {
       "name": "no-template",
-      "label": "No, start from scratch",
+      "label": "<Create an empty project (no template)>",
       "path": "projects/no-template",
       "insertPath": "./"
     }
