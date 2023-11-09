@@ -1,6 +1,4 @@
 {
-  "runtime": "nodejs18.x",
-  "version": "1.0",
   "appFunctions": {
     "myFunc": {
       "file": "example-function.js",
