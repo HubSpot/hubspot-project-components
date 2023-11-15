@@ -1,11 +1,7 @@
-exports.main = (context = {}, sendResponse) => {
+exports.main = async (context = {}) => {
   const { text } = context.parameters;
 
   const response = `This is coming from a serverless function! You entered: ${text}`;
 
-  try {
-    sendResponse(response);
-  } catch (error) {
-    sendResponse(error);
-  }
+  return response;
 };
