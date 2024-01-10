@@ -1,0 +1,23 @@
+{
+  "name": "Getting Started App",
+  "uid": "getting-started-app-uid",
+  "logo": "./logo.png",
+  "description": "An example project of how to build a Public App with Developer Projects",
+  "approvedExternalUrls": [
+    "https://api.your-domain.com"
+  ],
+  "redirectUrls": [
+    "https://your-domain.com/redirect-url"
+  ],
+  "scopes": [
+    "cms.knowledge_base.articles.publish",
+    "cms.domain.read",
+    "crm.lists.write"
+  ],
+  "support": {
+    "supportEmail": "support@your-domain.com",
+    "documentationUrl": "https://your-domain.com/docs",
+    "supportUrl": "https://your-domain.com/support",
+    "supportPhone": "1-888-888-8888"
+  }
+}
