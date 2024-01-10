@@ -6,14 +6,18 @@
   "approvedExternalUrls": [
     "https://api.your-domain.com"
   ],
-  "redirectUrls": [
-    "https://your-domain.com/redirect-url"
-  ],
-  "scopes": [
-    "cms.knowledge_base.articles.publish",
-    "cms.domain.read",
-    "crm.lists.write"
-  ],
+  "auth": {
+    "redirectUrls": [
+      "https://your-domain.com/redirect-url"
+    ],
+    "requiredScopes": [
+      "cms.knowledge_base.articles.publish",
+      "cms.domain.read",
+      "crm.lists.write"
+    ],
+    "optionalScopes": [],
+    "additionalScopes": []
+  },
   "support": {
     "supportEmail": "support@your-domain.com",
     "documentationUrl": "https://your-domain.com/docs",
