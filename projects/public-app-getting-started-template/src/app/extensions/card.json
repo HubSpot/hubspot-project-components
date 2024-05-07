@@ -1,0 +1,16 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Hello World",
+    "uid": "hello-world-card",
+    "location": "crm.record.tab",
+    "module": {
+      "file": "Example.tsx"
+    },
+    "objectTypes": [
+      {
+        "name": "contacts"
+      }
+    ]
+  }
+}

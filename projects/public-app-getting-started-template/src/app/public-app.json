@@ -1,0 +1,37 @@
+{
+  "name": "Getting Started App",
+  "uid": "getting-started-app-uid",
+  "description": "An example project of how to build a Public App with Developer Projects",
+  "allowedUrls": [
+    "https://api.your-domain.com"
+  ],
+  "auth": {
+    "redirectUrls": [
+      "http://localhost"
+    ],
+    "requiredScopes": [
+      "crm.objects.contacts.read",
+      "crm.objects.contacts.write"
+    ],
+    "optionalScopes": [],
+    "conditionallyRequiredScopes": []
+  },
+  "support": {
+    "supportEmail": "support@example.com",
+    "documentationUrl": "https://example.com/docs",
+    "supportUrl": "https://example.com/support",
+    "supportPhone": "+18005555555"
+  },
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./extensions/card.json"
+        }
+      ]
+    }
+  },
+  "webhook": {
+    "file": "./webhooks/webhook.json"
+  }
+}
