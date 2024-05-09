@@ -1,7 +1,7 @@
 {
   "name": "Get started with public apps",
   "uid": "get-started-public-app",
-  "description": "An example to demonstrate of how to build a public app with developer projects.",
+  "description": "An example to demonstrate how to build a public app with developer projects.",
   "allowedUrls": ["https://api.your-domain.com"],
   "logo": "assets/hslogo.png",
   "auth": {
