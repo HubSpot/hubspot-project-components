@@ -1,11 +1,11 @@
 {
   "type": "crm-card",
   "data": {
-    "title": "Hello World",
+    "title": "Hello Public App",
     "uid": "hello-world-card",
     "location": "crm.record.tab",
     "module": {
-      "file": "Example.tsx"
+      "file": "ExampleCard.tsx"
     },
     "objectTypes": [
       {

@@ -1,18 +1,12 @@
 {
-  "name": "Getting Started App",
-  "uid": "getting-started-app-uid",
-  "description": "An example project of how to build a Public App with Developer Projects",
-  "allowedUrls": [
-    "https://api.your-domain.com"
-  ],
+  "name": "Get started with public apps",
+  "uid": "get-started-public-app",
+  "description": "An example to demonstrate of how to build a public app with developer projects.",
+  "allowedUrls": ["https://api.your-domain.com"],
+  "logo": "assets/hslogo.png",
   "auth": {
-    "redirectUrls": [
-      "http://localhost"
-    ],
-    "requiredScopes": [
-      "crm.objects.contacts.read",
-      "crm.objects.contacts.write"
-    ],
+    "redirectUrls": ["http://localhost:3000/oauth-callback"],
+    "requiredScopes": ["crm.objects.contacts.read"],
     "optionalScopes": [],
     "conditionallyRequiredScopes": []
   },
@@ -26,7 +20,7 @@
     "crm": {
       "cards": [
         {
-          "file": "./extensions/card.json"
+          "file": "./extensions/example-card.json"
         }
       ]
     }
