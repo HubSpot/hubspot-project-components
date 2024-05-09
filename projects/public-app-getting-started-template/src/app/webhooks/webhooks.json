@@ -28,7 +28,7 @@
         "active": true
       }
     ],
-    "customEvents": [
+    "hubEvents": [
       {
         "subscriptionType": "contact.privacyDeletion",
         "active": true
