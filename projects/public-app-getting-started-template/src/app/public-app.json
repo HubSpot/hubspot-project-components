@@ -6,7 +6,7 @@
   "logo": "assets/hslogo.png",
   "auth": {
     "redirectUrls": ["http://localhost:3000/oauth-callback"],
-    "requiredScopes": ["crm.objects.contacts.read"],
+    "requiredScopes": ["crm.objects.contacts.read", "conversations.read"],
     "optionalScopes": [],
     "conditionallyRequiredScopes": []
   },
@@ -26,6 +26,6 @@
     }
   },
   "webhooks": {
-    "file": "./webhooks/webhook.json"
+    "file": "./webhooks/webhooks.json"
   }
 }
