@@ -8,9 +8,15 @@
   ],
   "projects": [
     {
-      "name": "getting-started",
-      "label": "CRM getting started project",
-      "path": "projects/getting-started-template",
+      "name": "getting-started-private-app",
+      "label": "CRM getting started project with private apps",
+      "path": "projects/private-app-getting-started-template",
+      "insertPath": "./"
+    },
+    {
+      "name": "getting-started-public-app",
+      "label": "CRM getting started project with public apps (BETA)",
+      "path": "projects/public-app-getting-started-template",
       "insertPath": "./"
     },
     {

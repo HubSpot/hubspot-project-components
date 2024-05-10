@@ -2,17 +2,17 @@
 
 In this repository, you can find different components to help you get started with your HubSpot Projects.
 
-
 ### Components
 
-In the future, you will be able to view a list of available components here. Because this project feature is still in development, we currently have stub files.
+1. An empty project with a basic `hsproject.json` file.
+2. A template to help you get started with private apps using the projects framework.***
+3. A template to help you get started with public apps using the projects framework.***
 
-1. App
-2. Serverless function
-3. CRM card (side panel)
-4. CRM card (middle panel)
+*** Beta access required for this component.
 
 ### Beta access
 
-You will need beta access to HubSpot Projects before you can download and use these components. Please contact a HubSpot service representative to learn more about Projects and get access to this Beta release.
+You will need access to the CRM Development Beta before you can download and use private app components. Please see [our development docs](https://developers.hubspot.com/docs/platform/crm-development-tools-overview) for more info.
+
+You will need beta access to HubSpot UI Extensions before you can download public app components. Please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLScIKnzh8kx-12iJWVzX-hmwAaoPUm0k6zBsUtr-wH8_EVSu0Q/viewform), if you're interested.
 

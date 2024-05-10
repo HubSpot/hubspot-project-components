@@ -1,0 +1,31 @@
+{
+  "name": "Get started with public apps",
+  "uid": "get-started-public-app",
+  "description": "An example to demonstrate how to build a public app with developer projects.",
+  "allowedUrls": ["https://api.hubapi.com"],
+  "logo": "assets/hslogo.png",
+  "auth": {
+    "redirectUrls": ["http://localhost:3000/oauth-callback"],
+    "requiredScopes": ["crm.objects.contacts.read", "conversations.read"],
+    "optionalScopes": [],
+    "conditionallyRequiredScopes": []
+  },
+  "support": {
+    "supportEmail": "support@example.com",
+    "documentationUrl": "https://example.com/docs",
+    "supportUrl": "https://example.com/support",
+    "supportPhone": "+18005555555"
+  },
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./extensions/example-card.json"
+        }
+      ]
+    }
+  },
+  "webhooks": {
+    "file": "./webhooks/webhooks.json"
+  }
+}
