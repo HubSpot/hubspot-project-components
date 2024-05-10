@@ -25,7 +25,7 @@
       ]
     }
   },
-  "webhook": {
+  "webhooks": {
     "file": "./webhooks/webhook.json"
   }
 }
