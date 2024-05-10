@@ -5,7 +5,7 @@
     "uid": "hello-world-card",
     "location": "crm.record.tab",
     "module": {
-      "file": "ExampleCard.tsx"
+      "file": "ExampleCard.jsx"
     },
     "objectTypes": [
       {
