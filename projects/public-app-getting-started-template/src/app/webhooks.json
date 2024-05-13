@@ -32,10 +32,6 @@
       {
         "subscriptionType": "contact.privacyDeletion",
         "active": true
-      },
-      {
-        "subscriptionType": "conversation.creation",
-        "active": true
       }
     ]
   }
