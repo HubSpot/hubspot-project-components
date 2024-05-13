@@ -5,7 +5,7 @@
   "allowedUrls": ["https://api.hubapi.com"],
   "auth": {
     "redirectUrls": ["http://localhost:3000/oauth-callback"],
-    "requiredScopes": ["crm.objects.contacts.read", "conversations.read"],
+    "requiredScopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
     "optionalScopes": [],
     "conditionallyRequiredScopes": []
   },
