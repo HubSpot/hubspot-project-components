@@ -22,7 +22,6 @@ const Extension = () => {
           📖 Get inspired by private app code samples
         </Link>
         <Link href="https://www.youtube.com/watch?v=FDumsLFwyNM&list=PLTGNq2fWP3b0HpN11u4CuM6tNJBacORWs">
-          {" "}
           ▶️ Watch video tutorials about building UI extensions for private apps
         </Link>
       </List>
