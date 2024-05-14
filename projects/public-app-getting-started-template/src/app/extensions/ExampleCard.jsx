@@ -19,12 +19,11 @@ const Extension = () => {
           📖 Learn more about utilities to help you build better extensions
         </Link>
         <Link href="github.com/hubspot/ui-extensions-examples">
-          📖 Use existing private app code samples to get inspiration
+          📖 Get inspired by private app code samples
         </Link>
         <Link href="https://www.youtube.com/watch?v=FDumsLFwyNM&list=PLTGNq2fWP3b0HpN11u4CuM6tNJBacORWs">
           {" "}
-          ▶️ Watch existing video tutorials to use CRM development tools to
-          build UI extensions (Private apps){" "}
+          ▶️ Watch video tutorials about building UI extensions for private apps
         </Link>
       </List>
       <Alert
