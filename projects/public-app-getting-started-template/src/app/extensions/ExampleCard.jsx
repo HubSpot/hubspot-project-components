@@ -21,21 +21,16 @@ const Extension = () => {
         <Link href="github.com/hubspot/ui-extensions-examples">
           📖 Get inspired by private app code samples
         </Link>
-        <Link href="https://www.youtube.com/watch?v=FDumsLFwyNM&list=PLTGNq2fWP3b0HpN11u4CuM6tNJBacORWs">
-          ▶️ Watch video tutorials about building UI extensions for private apps
+         <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
+          📖 Look at the Marketplace collection of apps that contain app cards
+        </Link>
+        <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
+          ▶️ Find resources to learn more
+        </Link>
+        <Link href="https://developers.hubspot.com/slack">
+          ▶️ Connect with developers on #ui-extensions channel on developer Slack community
         </Link>
       </List>
-      <Alert
-        title="Detailed private beta documentation is shared over e-mail
-          and Slack"
-        variant="info"
-      >
-        Access to CRM development tools to build UI extensions for Marketplace
-        is strictly limited to participants in private beta. You will receive
-        some resources that are only shared with you via e-mail or private beta
-        Slack channel. This includes documentation, Loom recordings, and early
-        access to Figma design kit.
-      </Alert>
     </>
   );
 };
