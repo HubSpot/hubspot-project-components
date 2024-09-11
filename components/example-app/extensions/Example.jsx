@@ -65,7 +65,7 @@ const Extension = ({ context, runServerless, sendAlert }) => {
           Quickstart Guide
         </Link>
         , or check out our{" "}
-        <Link href="https://github.com/HubSpot/ui-extensions-react-examples">
+        <Link href="https://github.com/HubSpot/ui-extensions-examples">
           code Samples
         </Link>
         .
