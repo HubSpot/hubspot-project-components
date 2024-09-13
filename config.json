@@ -24,6 +24,12 @@
       "label": "<Create an empty project (no template)>",
       "path": "projects/no-template",
       "insertPath": "./"
+    },
+    {
+      "name": "elevate",
+      "label": "Elevate theme",
+      "path": "@hubspot/elevate",
+      "insertPath": "./src"
     }
   ]
 }
