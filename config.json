@@ -15,7 +15,7 @@
     },
     {
       "name": "getting-started-public-app",
-      "label": "CRM getting started project with public apps (BETA)",
+      "label": "CRM getting started project with public apps",
       "path": "projects/public-app-getting-started-template",
       "insertPath": "./"
     },
