@@ -13,3 +13,5 @@ In this repository, you can find different components to help you get started wi
 ### Beta access
 
 You will need access to the CRM Development Beta before you can download and use private app components. Please see [our development docs](https://developers.hubspot.com/docs/platform/crm-development-tools-overview) for more info.
+
+You will need beta access to [HubSpot UI Extensions](https://developers.hubspot.com/build-app-cards) before you can download public app components.
