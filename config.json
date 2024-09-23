@@ -29,7 +29,8 @@
       "name": "elevate",
       "label": "Elevate theme",
       "path": "@hubspot/elevate",
-      "insertPath": "./src"
+      "insertPath": "./src",
+      "isHubSpotAsset": true
     }
   ]
 }
