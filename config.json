@@ -20,6 +20,13 @@
       "insertPath": "./"
     },
     {
+      "name": "elevate",
+      "label": "CMS project starting with the Elevate theme",
+      "path": "@hubspot/elevate",
+      "insertPath": "./src",
+      "isHubSpotAsset": true
+    },
+    {
       "name": "no-template",
       "label": "<Create an empty project (no template)>",
       "path": "projects/no-template",
