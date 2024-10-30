@@ -2,7 +2,7 @@
   "name": "Get started with public apps",
   "uid": "get-started-public-app",
   "description": "An example to demonstrate how to build a public app with developer projects.",
-  "allowedUrls": ["https://api.hubapi.com"],
+  "allowedUrls": ["https://api.yourplatform.com"],
   "auth": {
     "redirectUrls": ["http://localhost:3000/oauth-callback"],
     "requiredScopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
