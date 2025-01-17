@@ -10,22 +10,21 @@ import {
 } from "@hubspot/ui-extensions";
 
 // Define the extension to be run within the Hubspot CRM
-hubspot.extend(({ context, runServerlessFunction, actions }) => (
+hubspot.extend(({ context, actions }) => (
   <Extension
     context={context}
-    runServerless={runServerlessFunction}
     sendAlert={actions.addAlert}
   />
 ));
 
-// Define the Extension component, taking in runServerless, context, & sendAlert as props
-const Extension = ({ context, runServerless, sendAlert }) => {
+// Define the Extension component, taking in context and sendAlert as props
+const Extension = ({ context, sendAlert }) => {
   const [text, setText] = useState("");
 
   // Call serverless function to execute with parameters.
   // The `myFunc` function name is configured inside `serverless.json`
   const handleClick = async () => {
-    const { response } = await runServerless({ name: "myFunc", parameters: { text: text } });
+    const response = await hubspot.serverless("myFunc", { parameters: { text } });
     sendAlert({ message: response });
   };
 
