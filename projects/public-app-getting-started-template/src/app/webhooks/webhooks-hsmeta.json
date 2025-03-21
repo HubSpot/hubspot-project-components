@@ -10,19 +10,7 @@
       "crmObjects": [
         {
           "subscriptionType": "object.creation",
-          "objectType": "car-app-object",
-          "propertyName": "lastname",
-          "active": true
-        },
-        {
-          "subscriptionType": "object.creation",
           "objectType": "contact", 
-          "propertyName": "firstname",
-          "active": true
-        },
-        {
-          "subscriptionType": "object.creation",
-          "objectType": "custom_object",
           "propertyName": "firstname",
           "active": true
         }
@@ -35,12 +23,6 @@
         },
         {
           "subscriptionType": "contact.deletion",
-          "active": true
-        }
-      ],
-      "hubEvents": [
-        {
-          "subscriptionType": "contact.privacyDeletion",
           "active": true
         }
       ]

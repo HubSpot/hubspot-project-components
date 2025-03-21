@@ -9,7 +9,7 @@
   "projects": [
     {
       "name": "getting-started-public-app",
-      "label": "Getting started project with public app",
+      "label": "Getting started project with marketplace app",
       "path": "projects/public-app-getting-started-template",
       "insertPath": "./"
     },
