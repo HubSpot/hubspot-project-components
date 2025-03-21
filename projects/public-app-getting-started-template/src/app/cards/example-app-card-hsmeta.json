@@ -1,0 +1,11 @@
+{
+  "uid": "example-card",
+  "type": "card",
+  "config": {
+    "name": "Exmaple App Card",
+    "description": "Provides detailed information about a contact or company.",
+    "entrypoint": "./example-app-card.jsx",
+    "location": "crm.record.tab",
+    "objectTypes": [ "CONTACT", "COMPANY" ]
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { List, Text, Link, Alert } from "@hubspot/ui-extensions";
+import { List, Text, Link } from "@hubspot/ui-extensions";
 import { hubspot } from "@hubspot/ui-extensions";
 
 hubspot.extend(() => <Extension />);
@@ -21,14 +21,15 @@ const Extension = () => {
         <Link href="github.com/hubspot/ui-extensions-examples">
           📖 Get inspired by private app code samples
         </Link>
-         <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
+        <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
           📖 Look at the Marketplace collection of apps that contain app cards
         </Link>
         <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
           ▶️ Find resources to learn more
         </Link>
         <Link href="https://developers.hubspot.com/slack">
-          ▶️ Connect with developers on #ui-extensions channel on developer Slack community
+          ▶️ Connect with developers on #ui-extensions channel on developer
+          Slack community
         </Link>
       </List>
     </>
