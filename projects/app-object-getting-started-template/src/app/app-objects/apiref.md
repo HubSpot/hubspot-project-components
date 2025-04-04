@@ -1,6 +1,7 @@
 Required fields are marked with *
 
 - `name *` -- the programmatic name the developer wants to use for this App Object. Must be `UPPER_SNAKE_CASE`. The resulting fullyQualifiedName of the object will be of the form `a<appId>_<name>`
+- `appPrefix` -- App Object names displayed to customers in the CRM will represent the combination of appPrefix and either the singularForm/pluralForm of the object name (e.g. "appPrefix": "Vroom", "singularForm": "Car", then the singular display name to customers will be "Vroom Car")
 - `description` -- the description of the object, shown to customers in locations such as the Object Settings UI. Max length of 72 characters.
 - `singularForm *` -- label shown to customer to refer to this object in singular tense. Must be only letters and spaces, with the first letter of each word capatalized (e.g. "My Object", "Object", "A Cool Object"). Max lenghth of 50.
 - `pluralForm *` -- label shown to customer to refer to this object in plural tense. Same pattern/length restrictions as singularForm.
