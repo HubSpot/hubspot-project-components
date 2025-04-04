@@ -1,9 +1,10 @@
 {
-  "uid": "app-object-poc-app",
+  "uid": "app_object_poc_app",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build an app with an app object on developer projects.",
     "name": "my first app object app",
+    "appPrefix":"Vroom",
     "distribution" : "marketplace",
     "auth": {
       "type" : "oauth",

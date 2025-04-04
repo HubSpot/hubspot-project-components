@@ -1,5 +1,5 @@
 {
-  "uid": "app-webhooks",
+  "uid": "app_webhooks",
   "type": "webhooks",
   "config": {
     "settings": {

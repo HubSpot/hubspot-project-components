@@ -1,5 +1,5 @@
 {
-  "uid": "get-started-app-marketplace",
+  "uid": "get_started_app_marketplace",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a marketplace app with developer projects.",

@@ -1,5 +1,5 @@
 {
-  "uid": "example-app-card",
+  "uid": "example_app_card",
   "type": "card",
   "config": {
     "name": "Example App Card",
