@@ -3,6 +3,7 @@
   "type": "app-object",
   "config": {
     "name": "CAR",
+    "appPrefix":"Vroom",
     "description": "An automobile in our warehouse.",
     "singularForm": "Car",
     "pluralForm": "Cars",
