@@ -1,0 +1,8 @@
+{
+  "uid": "car_to_contact_association",
+  "type": "app-object-association",
+  "config": {
+    "firstObjectType": "car_app_object",
+    "secondObjectType": "CONTACT"
+  }
+}

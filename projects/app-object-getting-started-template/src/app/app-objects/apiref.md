@@ -8,7 +8,7 @@ Required fields are marked with *
 - `properties *` -- list of developer-defined properties; properties are defined with the same fields as our [public Properties API](https://developers.hubspot.com/docs/guides/api/crm/properties) with a few exceptions listed in the bullets below. The resulting properties will have `a<appId>_` prefixed to the provided name but that prefix should not be provided by the developer it is added automatically.
   - we do not have the field `displayOrder` because it is deprecated and doesn't do anything on the public API
   - we do not have the fields `referencedObjectType` or `externalOptions`
-  - we have an additional boolean field `isReadOnlyValue`. It defaults to `false`. If `true`, customer won't be able to modify the value of the property (i.e. it can only be written by the integrator)
+  - we have an additional boolean field `readOnlyValue`. It defaults to `false`. If `true`, customer won't be able to modify the value of the property (i.e. it can only be written by the integrator)
   - `formField` defaults to false (I believe this is the same behavior as the public API, but that's not explicit in the API reference)
   - `name` must be `lower_snake_case`
   - `label` must start with a capital letter, can only be comprised of letters and spaces, and the first letter of each word can optionally be uppercase, must all other letters must be lowercase

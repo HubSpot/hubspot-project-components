@@ -10,7 +10,9 @@
       "redirectUrls": ["http://localhost:3000/oauth-callback"],
       "requiredScopes": [
         "crm.objects.contacts.read",
-        "crm.objects.contacts.write"
+        "crm.objects.contacts.write",
+        "crm.schemas.companies.read",
+        "crm.schemas.companies.write"
       ],
       "optionalScopes": [],
       "conditionallyRequiredScopes": []
