@@ -1,28 +1,23 @@
 {
   "components": [
     {
-      "path": "components/example-app",
-      "label": "Example react app",
-      "insertPath": "./"
-    }
-  ],
-  "projects": [
-    {
-      "name": "getting-started-private-app",
-      "label": "CRM getting started project with private apps",
-      "path": "projects/private-app-getting-started-template",
+      "path": "components/card",
+      "label": "Card",
       "insertPath": "./"
     },
     {
-      "name": "getting-started-public-app",
-      "label": "CRM getting started project with public apps",
-      "path": "projects/public-app-getting-started-template",
+      "path": "components/functions",
+      "label": "App Function",
       "insertPath": "./"
     },
     {
-      "name": "no-template",
-      "label": "<Create an empty project (no template)>",
-      "path": "projects/no-template",
+      "path": "components/Settings",
+      "label": "Settings",
+      "insertPath": "./"
+    },
+    {
+      "path": "components/webhooks",
+      "label": "Webhook",
       "insertPath": "./"
     }
   ]

@@ -1,0 +1,12 @@
+{
+  "uid": "my_function",
+  "type": "app-function",
+  "config": {
+    "entrypoint": "/app/functions/function-one.js",
+    "endpoint": {
+      "path": "/api/function-one",
+      "methods": ["GET"]
+    },
+    "secretKeys": ["USER_PROVIDED_SECRET"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "uid": "north_star_card",
+  "type": "card",
+  "config": {
+    "name": "North Star App Card",
+    "location": "crm.record.tab",
+    "entrypoint": "/app/cards/SnapshotCard.jsx",
+    "objectTypes": [
+      "contacts", "car_app_object"
+    ]
+  }
+}
