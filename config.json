@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "path": "components/card",
+      "path": "components/cards",
       "label": "Card",
       "insertPath": "./"
     },
@@ -11,7 +11,7 @@
       "insertPath": "./"
     },
     {
-      "path": "components/Settings",
+      "path": "components/settings",
       "label": "Settings",
       "insertPath": "./"
     },
