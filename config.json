@@ -1,4 +1,5 @@
 {
+  "defaultFiles": ["hsproject.json"],
   "components": [
     {
       "path": "components/cards",
