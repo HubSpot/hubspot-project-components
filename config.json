@@ -3,22 +3,22 @@
     {
       "path": "components/cards",
       "label": "Card",
-      "insertPath": "./"
+      "insertPath": "./src/app/cards"
     },
     {
       "path": "components/functions",
       "label": "App Function",
-      "insertPath": "./"
+      "insertPath": "./src/app/functions"
     },
     {
       "path": "components/settings",
       "label": "Settings",
-      "insertPath": "./"
+      "insertPath": "./src/app/settings"
     },
     {
       "path": "components/webhooks",
       "label": "Webhook",
-      "insertPath": "./"
+      "insertPath": "./src/app/webhooks"
     }
   ]
 }
