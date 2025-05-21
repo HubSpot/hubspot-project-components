@@ -1,0 +1,31 @@
+{
+  "uid": "my_unified_app",
+  "type": "app",
+  "config": {
+    "description": "An example to demonstrate how to build a public app with developer projects.",
+    "name": "my unified app",
+    "logo": "/app/app-logo.jpg",
+    "distribution" :"marketplace",
+    "auth": {
+      "type" : "oauth",
+      "redirectUrls": ["http://localhost:3000/oauth-callback"],
+      "requiredScopes": [
+        "crm.objects.contacts.read",
+        "crm.objects.contacts.write"
+      ],
+      "optionalScopes": [],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": ["https://api.hubapi.com"],
+      "iframe": [],
+      "img": []
+    },
+    "support": {
+      "supportEmail": "support@example.com",
+      "documentationUrl": "https://example.com/docs",
+      "supportUrl": "https://example.com/support",
+      "supportPhone": "+18005555555"
+    }
+  }
+}
