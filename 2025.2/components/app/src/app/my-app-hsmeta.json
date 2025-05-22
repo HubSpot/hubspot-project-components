@@ -4,7 +4,6 @@
   "config": {
     "description": "An example to demonstrate how to build a public app with developer projects.",
     "name": "my unified app",
-    "logo": "/app/app-logo.jpg",
     "distribution" :"marketplace",
     "auth": {
       "type" : "oauth",
