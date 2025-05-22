@@ -4,22 +4,26 @@
     {
       "path": "components/cards",
       "label": "Card",
-      "parentComponent": "components/app"
+      "parentComponent": "components/app",
+      "insertPath": "./"
     },
     {
       "path": "components/functions",
       "label": "App Function",
-      "parentComponent": "components/app"
+      "parentComponent": "components/app",
+      "insertPath": "./"
     },
     {
       "path": "components/settings",
       "label": "Settings",
-      "parentComponent": "components/app"
+      "parentComponent": "components/app",
+      "insertPath": "./"
     },
     {
       "path": "components/webhooks",
       "label": "Webhook",
-      "parentComponent": "components/app"
+      "parentComponent": "components/app",
+      "insertPath": "./"
     }
   ]
 }
