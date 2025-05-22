@@ -1,4 +1,5 @@
 {
+  "defaultFiles": "./defaultFiles",
   "components": [
     {
       "path": "components/cards",
