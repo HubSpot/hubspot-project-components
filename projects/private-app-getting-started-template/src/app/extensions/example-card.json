@@ -1,0 +1,17 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Example Card",
+    "description": "This is an example Private App card",
+    "uid": "get_started_card",
+    "location": "crm.record.tab",
+    "module": {
+      "file": "Example.jsx"
+    },
+    "previewImage": {
+      "file": "assets/example-card-preview.png",
+      "altText": "Example app card UI extension, demonstrating a card with a title, description, and a button"
+    },
+    "objectTypes": [{ "name": "contacts" }]
+  }
+}

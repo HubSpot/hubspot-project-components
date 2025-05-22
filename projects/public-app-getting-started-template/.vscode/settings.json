@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["public-app.json"],
+      "url": "https://api.hubspot.com/project-schemas/2023.2/public_app"
+    }
+  ]
+}
