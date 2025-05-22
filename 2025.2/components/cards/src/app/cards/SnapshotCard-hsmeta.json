@@ -6,7 +6,7 @@
     "location": "crm.record.tab",
     "entrypoint": "/app/cards/SnapshotCard.jsx",
     "objectTypes": [
-      "contacts", "car_app_object"
+      "contacts"
     ]
   }
 }
