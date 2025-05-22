@@ -1,5 +1,17 @@
 {
   "defaultFiles": "./defaultFiles",
+  "tooling": [
+    {
+      "path": "tooling/claude",
+      "label": "Claude",
+      "insertPath": "./"
+    },
+    {
+      "path": "tooling/cursor",
+      "label": "Cursor",
+      "insertPath": "./"
+    }
+  ],
   "components": [
     {
       "path": "components/cards",
