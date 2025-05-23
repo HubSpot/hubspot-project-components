@@ -23,15 +23,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 - Example components can be found in https://github.com/HubSpot/hubspot-project-components.  They are split up by platform version like `${platformVersion}/components` 
 
 ## HubSpot CLI commands
-- Upload: `hs project upload`
+- The commands for working with projects in HubSpot are subcommands of `hs project`
+- Project Upload: `hs project upload`
 - Install the dependencies for the project: `hs project install-deps`
 - Debugging flag that can be added to `hs` commands and subcommands: `--debug`
 - Debugging problems with CLI installation: `hs doctor`
 - Profiles can be used with a `--profile` flag
-- The commands for working with projects in HubSpot are subcommands of `hs project`
 - `hs project open` will open the current project page in the browser
 - `hs init` is required to set up the hubspot configuration file
 - `hs auth` will authenticate a new account
+- All the commands for managing HubSpot accounts in the CLI are subcommands of `hs account`
 
 ## General
 - Follow existing patterns in the codebase
