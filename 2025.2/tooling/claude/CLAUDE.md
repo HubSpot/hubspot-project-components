@@ -15,7 +15,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 - `app` component must be in the `app` directory inside the project `srcDir`
 - `card` components must be in the `app/cards` directory inside the project `srcDir`
 - `app-function` components must be in the `app/functions` directory  inside the project `srcDir`
+- There can only be one `settings` component
 - `settings` components must be in the `app/settings` directory inside the project `srcDir`
+- There can only be one `webhooks` component.
 - `webhooks` components must be in the `app/webhooks` directory inside the project `srcDir`
 - Components can not be in subdirectories, only the directories defined above 
 - Example components can be found in https://github.com/HubSpot/hubspot-project-components.  They are split up by platform version like `${platformVersion}/components` 
