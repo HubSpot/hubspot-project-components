@@ -1,5 +1,5 @@
 {
-  "uid": "my_unified_app",
+  "uid": "sample-unified-app",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a public app with developer projects.",
