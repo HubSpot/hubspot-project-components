@@ -4,6 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 
 ## HubSpot Project Information
 - The project configuration is in the `hsproject.json` file
+- A directory is considered a part of the project it or a directory above it contains a `hsproject.json` file
 - The project src directory is defined in the `srcDir` field in the `hsproject.json`
 - The project's platform version is defined in `platformVersion` in the `hs project.json`
 - The `platformVersion` determines what features the project has access to as well as the shape of the configuration files
@@ -14,8 +15,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 - The `uid` field in the `-hsmeta.json` files must be unique with the project
 - The `type` field in the `-hsmeta.json` files defines the type of the component
 - Components can not be in subdirectories, only the specified directories
-- Example components can be found in https://github.com/HubSpot/hubspot-project-components.  They are split up by platform version like `${platformVersion}/components`
-- All components must be in the project source directory
+- Example components can be found in https://github.com/HubSpot/hubspot-project-components/tree/jy/2025.2.  The directories are split up by platform version like `${platformVersion}/components`
+- All component subdirectories must be in the project source directory
 
 ### app component
 - There can only be one `app` component

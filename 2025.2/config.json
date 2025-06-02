@@ -5,11 +5,6 @@
       "path": "tooling/claude",
       "label": "Claude",
       "insertPath": "./"
-    },
-    {
-      "path": "tooling/cursor",
-      "label": "Cursor",
-      "insertPath": "./"
     }
   ],
   "components": [

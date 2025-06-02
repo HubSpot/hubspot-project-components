@@ -4,9 +4,9 @@
   "config": {
     "description": "An example to demonstrate how to build a public app with developer projects.",
     "name": "my unified app",
-    "distribution" :"marketplace",
+    "distribution" :"private",
     "auth": {
-      "type" : "oauth",
+      "type" : "static",
       "redirectUrls": ["http://localhost:3000/oauth-callback"],
       "requiredScopes": [
         "crm.objects.contacts.read",
