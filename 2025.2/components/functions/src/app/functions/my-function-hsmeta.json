@@ -7,6 +7,6 @@
       "path": "/api/function-one",
       "methods": ["GET"]
     },
-    "secretKeys": ["USER_PROVIDED_SECRET"]
+    "secretKeys": []
   }
 }
