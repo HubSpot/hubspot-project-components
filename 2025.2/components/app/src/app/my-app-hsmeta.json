@@ -7,7 +7,6 @@
     "distribution" :"private",
     "auth": {
       "type" : "static",
-      "redirectUrls": ["http://localhost:3000/oauth-callback"],
       "requiredScopes": [
         "crm.objects.contacts.read",
         "crm.objects.contacts.write"
