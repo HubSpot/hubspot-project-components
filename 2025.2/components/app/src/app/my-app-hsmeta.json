@@ -3,7 +3,7 @@
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a public app with developer projects.",
-    "name": "my unified app",
+    "name": "Sample static unified app",
     "distribution" :"private",
     "auth": {
       "type" : "static",
