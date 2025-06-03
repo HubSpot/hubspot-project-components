@@ -1,12 +1,13 @@
 {
-  "uid": "sample-unified-app",
+  "uid": "sample-oauth-marketplace-app",
   "type": "app",
   "config": {
-    "description": "An example to demonstrate how to build a public app with developer projects.",
-    "name": "Sample static unified app",
-    "distribution" :"private",
+    "description": "An example to demonstrate how to build a marketplace app with developer projects.",
+    "name": "Sample marketplace app",
+    "distribution" :"marketplace",
     "auth": {
-      "type" : "static",
+      "type" : "oauth",
+      "redirectUrls": ["http://localhost:3000"],
       "requiredScopes": [
         "crm.objects.contacts.read",
         "crm.objects.contacts.write"
