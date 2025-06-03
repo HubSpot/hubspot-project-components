@@ -12,25 +12,33 @@
       "path": "components/cards",
       "label": "Card",
       "parentComponent": "components/app",
-      "insertPath": "./"
+      "insertPath": "./",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
     },
     {
       "path": "components/functions",
       "label": "App Function",
       "parentComponent": "components/app",
-      "insertPath": "./"
+      "insertPath": "./",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private"]
     },
     {
       "path": "components/settings",
       "label": "Settings",
       "parentComponent": "components/app",
-      "insertPath": "./"
+      "insertPath": "./",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
     },
     {
       "path": "components/webhooks",
       "label": "Webhook",
       "parentComponent": "components/app",
-      "insertPath": "./"
+      "insertPath": "./",
+      "supportedAuthTypes": ["static"],
+      "supportedDistributions": ["private"]
     }
   ]
 }
