@@ -1,12 +1,5 @@
 {
   "defaultFiles": "./defaultFiles",
-  "tooling": [
-    {
-      "path": "tooling/claude",
-      "label": "Claude",
-      "insertPath": "./"
-    }
-  ],
   "parentComponents": [
     {
       "label": "Static Private App",
