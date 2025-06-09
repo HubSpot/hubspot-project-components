@@ -28,7 +28,6 @@
       "path": "components/cards",
       "label": "Card",
       "parentType": "app",
-      "insertPath": "./",
       "supportedAuthTypes": ["oauth", "static"],
       "supportedDistributions": ["private", "marketplace"]
     },
@@ -36,7 +35,6 @@
       "path": "components/functions",
       "label": "App Function",
       "parentType": "app",
-      "insertPath": "./",
       "supportedAuthTypes": ["oauth", "static"],
       "supportedDistributions": ["private"]
     },
@@ -44,7 +42,6 @@
       "path": "components/settings",
       "label": "Settings",
       "parentType": "app",
-      "insertPath": "./",
       "supportedAuthTypes": ["oauth", "static"],
       "supportedDistributions": ["private", "marketplace"]
     },
@@ -52,7 +49,6 @@
       "path": "components/webhooks",
       "label": "Webhook",
       "parentType": "app",
-      "insertPath": "./",
       "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
     }
