@@ -3,10 +3,10 @@ import { EmptyState, Text } from "@hubspot/ui-extensions";
 import { hubspot } from "@hubspot/ui-extensions";
 
 hubspot.extend(({ context }) => {
-  return <Settings context={context} />;
+  return <NewSettingsPage context={context} />;
 });
 
-const Settings = ({ context }) => {
+const NewSettingsPage = ({ context }) => {
 
   return (
     <EmptyState
@@ -14,7 +14,7 @@ const Settings = ({ context }) => {
       layout="vertical"
     >
       <Text>
-      Contact '{context.extension.appName}' for upcoming development plans
+      Build your application settings page here!
       </Text>
     </EmptyState>
   );
