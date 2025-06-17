@@ -1,8 +1,8 @@
 {
-  "uid": "north_star_card",
+  "uid": "example_card",
   "type": "card",
   "config": {
-    "name": "North Star App Card",
+    "name": "Example Card",
     "location": "crm.record.tab",
     "entrypoint": "/app/cards/NewCard.jsx",
     "objectTypes": [
