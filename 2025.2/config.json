@@ -1,0 +1,60 @@
+{
+  "defaultFiles": "./defaultFiles",
+  "parentComponents": [
+    {
+      "label": "Static Private App",
+      "type": "app",
+      "authType": "static",
+      "distribution": "private",
+      "path": "components/app/static-private"
+    },
+    {
+      "label": "OAuth Private App",
+      "type": "app",
+      "authType": "oauth",
+      "distribution": "private",
+      "path": "components/app/oauth-private"
+    },
+    {
+      "label": "OAuth Marketplace App",
+      "type": "app",
+      "authType": "oauth",
+      "distribution": "marketplace",
+      "path": "components/app/oauth-marketplace"
+    }
+  ],
+  "components": [
+    {
+      "path": "components/cards",
+      "label": "Card",
+      "type": "card",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/functions",
+      "label": "App Function",
+      "type": "app-function",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private"]
+    },
+    {
+      "path": "components/settings",
+      "label": "Settings",
+      "type": "settings",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/webhooks",
+      "type": "webhooks",
+      "label": "Webhook",
+      "parentType": "app",
+      "supportedAuthTypes": ["static"],
+      "supportedDistributions": ["private"]
+    }
+  ]
+}

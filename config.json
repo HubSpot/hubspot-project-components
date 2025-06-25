@@ -2,28 +2,24 @@
   "components": [
     {
       "path": "components/example-app",
-      "label": "Example react app",
-      "insertPath": "./"
+      "label": "Example react app"
     }
   ],
   "projects": [
     {
       "name": "getting-started-private-app",
       "label": "CRM getting started project with private apps",
-      "path": "projects/private-app-getting-started-template",
-      "insertPath": "./"
+      "path": "projects/private-app-getting-started-template"
     },
     {
       "name": "getting-started-public-app",
       "label": "CRM getting started project with public apps",
-      "path": "projects/public-app-getting-started-template",
-      "insertPath": "./"
+      "path": "projects/public-app-getting-started-template"
     },
     {
       "name": "no-template",
       "label": "<Create an empty project (no template)>",
-      "path": "projects/no-template",
-      "insertPath": "./"
+      "path": "projects/no-template"
     }
   ]
 }
