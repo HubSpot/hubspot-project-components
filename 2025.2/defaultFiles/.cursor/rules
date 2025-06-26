@@ -1,0 +1,63 @@
+---
+description: HubSpot component project rules
+globs: ["**/*-hsmeta.json", "hsproject.json", "app/**/*"]
+alwaysApply: true
+---
+
+# HubSpot Project Components Rules
+
+## Project Structure
+- Project configuration is in `hsproject.json` file
+- Source directory is defined in `srcDir` field in `hsproject.json`
+- Platform version is defined in `platformVersion` in `hsproject.json`
+- Components must be in project source directory only
+
+## Component Configuration
+- Component configuration files must end with `-hsmeta.json`
+- `uid` field must be unique within the project
+- `type` field defines the component type
+- Components cannot be in nested subdirectories
+- Follow directory structure based on component type
+
+## Component Types and Directory Rules
+
+### app component
+- Only one `app` component allowed
+- Must be in `app` directory
+- If `config.distribution` is `marketplace`, only `oauth` auth type is valid
+
+### card component
+- Must be in `app/cards` directory
+
+### app-function component
+- Must be in `app/functions` directory
+- Not available when `config.distribution` is `marketplace`
+
+### settings component
+- Only one `settings` component allowed
+- Must be in `app/settings` directory
+
+### webhooks component
+- Only one `webhooks` component allowed
+- Must be in `app/webhooks` directory
+- Only available when `config.distribution` is `private` and `config.auth.type` is `static`
+
+### workflow-action component
+- Must be in `app/workflow-actions` directory
+
+## HubSpot CLI Commands
+- Use `hs project` subcommands for project management
+- Use `--help` for command details
+- Use `--debug` flag for debugging
+- Use `hs doctor` for CLI installation issues
+- Use `hs project open` to open project in browser
+- Use `hs init` to set up configuration
+- Use `hs auth` to authenticate accounts
+- Use `hs account` subcommands for account management
+
+## Best Practices
+- Follow existing patterns in codebase
+- Use proper component structure based on `type` field
+- Follow HubSpot naming conventions
+- Validate components are in correct directories
+- Reference example components at https://github.com/HubSpot/hubspot-project-components
