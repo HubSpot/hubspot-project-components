@@ -53,8 +53,8 @@
       "type": "webhooks",
       "label": "Webhook",
       "parentType": "app",
-      "supportedAuthTypes": ["static"],
-      "supportedDistributions": ["private"]
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
     }
   ]
 }
