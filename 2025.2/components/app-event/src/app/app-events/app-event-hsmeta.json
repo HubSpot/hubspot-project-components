@@ -2,7 +2,7 @@
   "uid": "example_app_event",
   "type": "app-event",
   "config": {
-    "name": "Another Webinar Registration",
+    "name": "Example Webinar Registration",
     "objectType": "contact",
     "headerTemplate": "Registered for [{{webinarName}}](https://mywebinarsystem/webinar/{{webinarId}})",
     "detailTemplate": "Registration occurred at {{#formatDate timestamp}}{{/formatDate}}",
