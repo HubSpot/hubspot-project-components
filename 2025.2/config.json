@@ -25,6 +25,14 @@
   ],
   "components": [
     {
+      "path": "components/app-event",
+      "type": "app-event",
+      "label": "App Event",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
+    },
+    {
       "path": "components/cards",
       "label": "Card",
       "type": "card",
@@ -52,6 +60,14 @@
       "path": "components/webhooks",
       "type": "webhooks",
       "label": "Webhook",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/workflow-actions",
+      "type": "workflow-action",
+      "label": "Custom Workflow Action",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]

@@ -1,0 +1,37 @@
+{
+  "uid": "example_app_event",
+  "type": "app-event",
+  "config": {
+    "name": "Another Webinar Registration",
+    "objectType": "contact",
+    "headerTemplate": "Registered for [{{webinarName}}](https://mywebinarsystem/webinar/{{webinarId}})",
+    "detailTemplate": "Registration occurred at {{#formatDate timestamp}}{{/formatDate}}",
+    "properties": [
+      {
+        "name": "webinarName",
+        "label": "Webinar Name",
+        "type": "string"
+      },
+      {
+        "name": "webinarId",
+        "label": "Webinar Id",
+        "type": "string"
+      },
+      {
+        "name": "webinarType",
+        "label": "Webinar Type",
+        "type": "enumeration",
+        "options": [
+          {
+            "value": "regular",
+            "label": "Regular"
+          },
+          {
+            "value": "ama",
+            "label": "Ask me anything"
+          }
+        ]
+      }
+    ]
+  }
+}
