@@ -25,14 +25,6 @@
   ],
   "components": [
     {
-      "path": "components/app-event",
-      "type": "app-event",
-      "label": "App Event",
-      "parentType": "app",
-      "supportedAuthTypes": ["oauth"],
-      "supportedDistributions": ["marketplace"]
-    },
-    {
       "path": "components/cards",
       "label": "Card",
       "type": "card",
