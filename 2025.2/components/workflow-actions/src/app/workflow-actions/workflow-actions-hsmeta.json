@@ -7,9 +7,6 @@
     "supportedClients": [
       {
         "client" : "WORKFLOWS"
-      },
-      {
-        "client": "AGENTS"
       }
     ],
     "inputFields": [
