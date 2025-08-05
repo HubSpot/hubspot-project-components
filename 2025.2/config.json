@@ -55,6 +55,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/workflow-actions",
+      "type": "workflow-action",
+      "label": "Custom Workflow Action",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
     }
   ]
 }
