@@ -9,7 +9,7 @@
       "path": "components/app/static-private",
       "promptFor": [
         {
-          "name": "uid",
+          "name": "Name",
           "location": "config.name"
         },
         {
@@ -26,7 +26,7 @@
       "path": "components/app/oauth-private",
       "promptFor": [
         {
-          "name": "uid",
+          "name": "Name",
           "location": "config.name"
         },
         {
@@ -43,7 +43,7 @@
       "path": "components/app/oauth-marketplace",
       "promptFor": [
         {
-          "name": "uid",
+          "name": "Name",
           "location": "config.name"
         },
         {
