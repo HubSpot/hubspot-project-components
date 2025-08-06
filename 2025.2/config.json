@@ -6,21 +6,51 @@
       "type": "app",
       "authType": "static",
       "distribution": "private",
-      "path": "components/app/static-private"
+      "path": "components/app/static-private",
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "config.name"
+        },
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "label": "OAuth Private App",
       "type": "app",
       "authType": "oauth",
       "distribution": "private",
-      "path": "components/app/oauth-private"
+      "path": "components/app/oauth-private",
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "config.name"
+        },
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "label": "OAuth Marketplace App",
       "type": "app",
       "authType": "oauth",
       "distribution": "marketplace",
-      "path": "components/app/oauth-marketplace"
+      "path": "components/app/oauth-marketplace",
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "config.name"
+        },
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     }
   ],
   "components": [
@@ -30,7 +60,17 @@
       "type": "card",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
-      "supportedDistributions": ["private", "marketplace"]
+      "supportedDistributions": ["private", "marketplace"],
+      "promptFor": [
+        {
+        "name": "Name",
+        "location": "config.name"
+        },
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "path": "components/functions",
@@ -38,7 +78,13 @@
       "type": "app-function",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
-      "supportedDistributions": ["private"]
+      "supportedDistributions": ["private"],
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "path": "components/settings",
@@ -46,7 +92,13 @@
       "type": "settings",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
-      "supportedDistributions": ["private", "marketplace"]
+      "supportedDistributions": ["private", "marketplace"],
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "path": "components/webhooks",
@@ -54,7 +106,13 @@
       "label": "Webhook",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
-      "supportedDistributions": ["private", "marketplace"]
+      "supportedDistributions": ["private", "marketplace"],
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     },
     {
       "path": "components/workflow-actions",
@@ -62,7 +120,13 @@
       "label": "Custom Workflow Action",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
-      "supportedDistributions": ["private", "marketplace"]
+      "supportedDistributions": ["private", "marketplace"],
+      "promptFor": [
+        {
+          "name": "uid",
+          "location": "uid"
+        }
+      ]
     }
   ]
 }
