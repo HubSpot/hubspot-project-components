@@ -28,6 +28,7 @@ alwaysApply: true
 
 ### card component
 - Must be in `app/cards` directory
+- Cannot use `window.fetch`, and instead must use the `fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with this fetch function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 
 ### app-function component
 - Must be in `app/functions` directory
@@ -36,6 +37,7 @@ alwaysApply: true
 ### settings component
 - Only one `settings` component allowed
 - Must be in `app/settings` directory
+- Cannot use `window.fetch`, and instead must use the `fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with this fetch function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 
 ### webhooks component
 - Only one `webhooks` component allowed
