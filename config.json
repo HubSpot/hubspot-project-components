@@ -17,6 +17,11 @@
       "path": "projects/public-app-getting-started-template"
     },
     {
+      "name": "scim-app",
+      "label": "Starter project for integrating with SCIM",
+      "path": "projects/scim-app-template"
+    },
+    {
       "name": "no-template",
       "label": "<Create an empty project (no template)>",
       "path": "projects/no-template"
