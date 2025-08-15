@@ -34,7 +34,7 @@
     },
     {
       "path": "components/functions",
-      "label": "App Function",
+      "label": "Public Function",
       "type": "app-function",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
