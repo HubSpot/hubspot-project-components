@@ -63,6 +63,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/scim",
+      "type": "scim",
+      "label": "SCIM Integration",
+      "parentType": "app",
+      "supportedAuthTypes": ["static"],
+      "supportedDistributions": ["private"]
     }
   ]
 }
