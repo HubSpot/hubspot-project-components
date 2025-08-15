@@ -44,10 +44,6 @@ alwaysApply: true
 - There can only be one `scim` component
 - `scim` components must be in the `app/scim` directory
 
-### settings component
-- Only one `settings` component allowed
-- Must be in `app/settings` directory
-
 ### webhooks component
 - Only one `webhooks` component allowed
 - Must be in `app/webhooks` directory
