@@ -77,8 +77,8 @@
       "type": "app-object",
       "label": "App Object",
       "parentType": "app",
-      "supportedAuthTypes": ["oauth", "static" ],
-      "supportedDistributions": ["private", "marketplace"]
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
