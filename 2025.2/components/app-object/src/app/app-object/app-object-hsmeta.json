@@ -1,0 +1,52 @@
+{
+  "uid": "car_app_object",
+  "type": "app-object",
+  "config": {
+    "name": "CAR",
+    "description": "An automobile in our warehouse.",
+    "singularForm": "Car",
+    "pluralForm": "Cars",
+    "properties": [
+      {
+        "type": "string",
+        "fieldType": "text",
+        "name": "model",
+        "label": "Model",
+        "description": "The model of this car"
+      },
+      {
+        "type": "enumeration",
+        "fieldType": "select",
+        "name": "make",
+        "label": "Make",
+        "description": "The manufacturer of this car",
+        "options": [
+          {
+            "label": "Ford",
+            "value": "ford",
+            "displayOrder": 0
+          },
+          {
+            "label": "Toyota",
+            "value": "toyota",
+            "displayOrder": 1
+          },
+          {
+            "label": "Chevrolet",
+            "value": "chevrolet",
+            "displayOrder": 2
+          }
+        ]
+      }
+    ],
+    "primaryDisplayLabelPropertyName": "model",
+    "secondaryDisplayLabelPropertyNames": [
+      "make"
+    ],
+    "settings": {
+      "hasRecordPage": true,
+      "allowsUserCreatedRecords": true,
+      "hasEngagements": false
+    }
+  }
+}

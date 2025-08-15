@@ -26,6 +26,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 ### card
 - `card` components must be in the `app/cards` directory
 
+### app-object
+- `app-object` components must be in the `app/app-object` directory
+
 ### app-function
 - `app-function` components must be in the `app/functions` directory
 - `app-function` components are not available when `config.distribution` is set to `marketplace` in the `app` component `-hsmeta.son` file 
@@ -33,6 +36,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 # settings
 - There can only be one `settings` component
 - `settings` components must be in the `app/settings` directory
+
+# scim
+- There can only be one `scim` component
+- `scim` components must be in the `app/scim` directory
 
 # webhooks
 - There can only be one `webhooks` component.
