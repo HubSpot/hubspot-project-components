@@ -9,7 +9,7 @@
         "client" : "WORKFLOWS"
       },
       {
-        "client" : "AGENT"
+        "client" : "AGENTS"
       }
     ],
     "inputFields": [
