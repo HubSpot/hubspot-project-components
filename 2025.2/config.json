@@ -65,6 +65,14 @@
       "supportedDistributions": ["private", "marketplace"]
     },
     {
+      "path": "components/workflow-actions-tool",
+      "type": "workflow-action-tool",
+      "label": "Custom Workflow Action Tool",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
       "path": "components/scim",
       "type": "scim",
       "label": "SCIM Integration",
