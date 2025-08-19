@@ -73,7 +73,7 @@
       "supportedDistributions": ["private"]
     },
     {
-      "path": "components/app-object",
+      "path": "components/app-objects",
       "type": "app-object",
       "label": "App Object",
       "parentType": "app",
