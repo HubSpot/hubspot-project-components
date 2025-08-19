@@ -67,7 +67,7 @@
     {
       "path": "components/workflow-actions-tool",
       "type": "workflow-action-tool",
-      "label": "Custom Workflow Action (available as a Tool in Agents)",
+      "label": "Tool",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
