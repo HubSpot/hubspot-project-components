@@ -67,7 +67,7 @@
     {
       "path": "components/workflow-actions-tool",
       "type": "workflow-action-tool",
-      "label": "Tool",
+      "label": "Agent Tool",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
