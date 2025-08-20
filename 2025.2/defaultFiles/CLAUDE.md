@@ -26,6 +26,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 ### card
 - `card` components must be in the `app/cards` directory
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
+- Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components 
 
 ### app-function
 - `app-function` components must be in the `app/functions` directory
@@ -35,6 +36,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 - There can only be one `settings` component
 - `settings` components must be in the `app/settings` directory
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
+- Only components exported from the `@hubspot/ui-extensions` npm package can be used in `settings` components
 
 # webhooks
 - There can only be one `webhooks` component.
