@@ -1,0 +1,66 @@
+{
+  "uid": "example_workflow_action",
+  "type": "workflow-action",
+  "config": {
+    "actionUrl": "https://example.com",
+    "isPublished": true,
+    "supportedClients": [
+      {
+        "client" : "WORKFLOWS"
+      },
+      {
+        "client" : "AGENTS"
+      }
+    ],
+    "inputFields": [
+      {
+        "typeDefinition": {
+          "name": "message",
+          "type": "string",
+          "fieldType": "textarea"
+        },
+        "supportedValueTypes": ["STATIC_VALUE"],
+        "isRequired": true
+      },
+      {
+        "typeDefinition": {
+          "name": "priority",
+          "type": "enumeration",
+          "fieldType": "select",
+          "options": [
+            {
+              "value": "high",
+              "label": "High Priority"
+            },
+            {
+              "value": "normal",
+              "label": "Normal Priority"
+            },
+            {
+              "value": "low",
+              "label": "Low Priority"
+            }
+          ]
+        },
+        "supportedValueTypes": ["STATIC_VALUE"],
+        "isRequired": true
+      }
+    ],
+    "labels": {
+      "en": {
+        "actionName": "My Custom Action",
+        "actionDescription": "Sends a notification with custom message and priority level",
+        "actionCardContent": "Send {{priority}} priority notification",
+        "inputFieldLabels": {
+          "message": "Notification Message",
+          "priority": "Priority Level"
+        },
+        "inputFieldDescriptions": {
+          "message": "Enter the message to be sent in the notification",
+          "priority": "Select the priority level for this notification"
+        }
+      }
+    },
+    "objectTypes": ["CONTACT"]
+  }
+}
