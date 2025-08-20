@@ -71,6 +71,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
+    },
+    {
+      "path": "components/app-objects",
+      "type": "app-object",
+      "label": "App Object",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
