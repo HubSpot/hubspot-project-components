@@ -87,6 +87,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth"],
       "supportedDistributions": ["marketplace"]
+    },
+    {
+      "path": "components/pages",
+      "type": "page",
+      "label": "App Home",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
