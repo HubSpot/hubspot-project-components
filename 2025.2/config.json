@@ -34,7 +34,7 @@
     },
     {
       "path": "components/functions",
-      "label": "App Function",
+      "label": "Public Function",
       "type": "app-function",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
@@ -63,6 +63,30 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/workflow-actions-tool",
+      "type": "workflow-action-tool",
+      "label": "Agent Tool",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/scim",
+      "type": "scim",
+      "label": "SCIM Integration",
+      "parentType": "app",
+      "supportedAuthTypes": ["static"],
+      "supportedDistributions": ["private"]
+    },
+    {
+      "path": "components/app-objects",
+      "type": "app-object",
+      "label": "App Object",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
