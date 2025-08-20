@@ -67,7 +67,7 @@
     {
       "path": "components/workflow-actions-tool",
       "type": "workflow-action",
-      "cliSelector": "workflow-action",
+      "cliSelector": "workflow-action-tool",
       "label": "Agent Tool",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
