@@ -26,6 +26,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 ### card
 - `card` components must be in the `app/cards` directory
 
+### app-event
+- `app-event` components must be in the `app/app-events` directory
+- 
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 

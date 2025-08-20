@@ -29,6 +29,9 @@ alwaysApply: true
 ### card component
 - Must be in `app/cards` directory
 
+### app-event
+- `app-event` components must be in the `app/app-events` directory
+
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 
