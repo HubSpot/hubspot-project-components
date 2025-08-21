@@ -6,9 +6,9 @@ alwaysApply: true
 
 ## HubSpot Project Information
 - The project configuration is in the `hsproject.json` file
-- A directory is considered a part of the project it or a directory above it contains a `hsproject.json` file
+- A directory is considered a part of the project if it or a directory above it contains a `hsproject.json` file
 - The project src directory is defined in the `srcDir` field in the `hsproject.json`
-- The project's platform version is defined in `platformVersion` in the `hs project.json`
+- The project's platform version is defined in `platformVersion` field in the `hs project.json`
 - The `platformVersion` determines what features the project has access to as well as the shape of the configuration files
 
 ## npm packages
