@@ -33,6 +33,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working on HubS
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 - Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components 
 
+### app-event
+- `app-event` components must be in the `app/app-events` directory
+- 
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 

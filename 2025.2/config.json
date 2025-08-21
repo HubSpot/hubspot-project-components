@@ -88,6 +88,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth"],
       "supportedDistributions": ["marketplace"]
+    },
+    {
+      "path": "components/app-events",
+      "type": "app-event",
+      "label": "App Events",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
