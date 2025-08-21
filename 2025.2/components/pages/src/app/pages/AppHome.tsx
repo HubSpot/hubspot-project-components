@@ -4,10 +4,10 @@ import { hubspot } from "@hubspot/ui-extensions";
 import { HeaderActions, PrimaryHeaderActionButton, SecondaryHeaderActionButton } from '@hubspot/ui-extensions/experimental';
 
 hubspot.extend<"home">(({ context }) => {
-  return <NewSettingsPage context={context} />;
+  return <NewHomesPage context={context} />;
 });
 
-const NewSettingsPage = ({ context }) => {
+const NewHomesPage = ({ context }) => {
 
   return (
     <>
@@ -27,7 +27,7 @@ const NewSettingsPage = ({ context }) => {
         layout="vertical"
       >
         <Text>
-          Build your application settings page here!
+          Build your application home page here!
         </Text>
       </EmptyState>
     </>
