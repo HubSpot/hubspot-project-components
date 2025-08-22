@@ -11,6 +11,10 @@ IMPORTANT: IF THE HUBSPOT MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO
 - The project's platform version is defined in `platformVersion` in the `hs project.json`
 - The `platformVersion` determines what features the project has access to as well as the shape of the configuration files
 
+## npm packages
+### `@hubspot/ui-extensions`
+- In the `@hubspot/ui-extensions` npm package, only the component properties defined by the component are valid.  `style` properties are not valid
+
 ## Component Information
 ### General
 - Component configuration files must end with `-hsmeta.json`
@@ -27,7 +31,13 @@ IMPORTANT: IF THE HUBSPOT MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO
 
 ### card
 - `card` components must be in the `app/cards` directory
+- The global `window` object is not available in the `card` component
+- Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
+- Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components 
 
+### app-event
+- `app-event` components must be in the `app/app-events` directory
+- 
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 
@@ -38,6 +48,10 @@ IMPORTANT: IF THE HUBSPOT MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO
 # settings
 - There can only be one `settings` component
 - `settings` components must be in the `app/settings` directory
+- The global `window` object is not available in the `settings` component
+- Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
+- Only components exported from the `@hubspot/ui-extensions` npm package can be used in `settings` components
+- React Components from `@hubspot/ui-extensions/crm` cannot be used in `settings` components
 
 # scim
 - There can only be one `scim` component
