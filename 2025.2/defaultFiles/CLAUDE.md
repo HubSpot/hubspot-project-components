@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working on HubSpot components
 
-IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO MANUALLY USE CLI COMMANDS
+IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO MANUALLY USE CLI COMMANDS OR BEFORE TRYING TO DO ANYTHING WITH HUBSPOT ASSETS
 
 ## HubSpot Project Information
 - The project configuration is in the `hsproject.json` file
