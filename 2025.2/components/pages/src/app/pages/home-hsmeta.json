@@ -2,7 +2,7 @@
   "uid": "app-home",
   "type": "page",
   "config": {
-    "entrypoint": "/app/pages/AppHome.tsx",
+    "entrypoint": "/app/pages/Home.tsx",
     "location": "home"
   }
 }
