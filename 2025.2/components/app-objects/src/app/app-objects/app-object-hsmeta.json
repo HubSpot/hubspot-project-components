@@ -1,30 +1,37 @@
 {
-  "uid": "car_app_object",
+  "uid": "car-app-object",
   "type": "app-object",
   "config": {
     "name": "CAR",
-    "description": "An automobile in our warehouse.",
+    "description": "An automobile object for tracking vehicle inventory and specifications",
     "singularForm": "Car",
     "pluralForm": "Cars",
+    "appPrefix": "CarApp",
+    "primaryDisplayLabelPropertyName": "model",
+    "secondaryDisplayLabelPropertyNames": [
+      "make",
+      "year"
+    ],
     "properties": [
       {
-        "type": "string",
-        "fieldType": "text",
         "name": "model",
         "label": "Model",
-        "description": "The model of this car"
+        "type": "string",
+        "fieldType": "text"
       },
       {
-        "type": "enumeration",
-        "fieldType": "select",
         "name": "make",
         "label": "Make",
         "description": "The manufacturer of this car",
+        "type": "enumeration",
+        "fieldType": "select",
         "options": [
           {
             "label": "Ford",
             "value": "ford",
-            "displayOrder": 0
+            "description": "American multinational automaker",
+            "displayOrder": 0,
+            "hidden": false
           },
           {
             "label": "Toyota",
@@ -32,16 +39,209 @@
             "displayOrder": 1
           },
           {
-            "label": "Chevrolet",
-            "value": "chevrolet",
+            "label": "BMW",
+            "value": "bmw",
+            "description": "German luxury manufacturer",
             "displayOrder": 2
           }
         ]
+      },
+      {
+        "name": "year",
+        "label": "Year",
+        "type": "number",
+        "fieldType": "number"
+      },
+      {
+        "name": "msrp",
+        "label": "MSRP",
+        "type": "number",
+        "fieldType": "number",
+        "groupName": "pricing_info"
+      },
+      {
+        "name": "vin",
+        "label": "VIN",
+        "description": "Vehicle Identification Number",
+        "type": "string",
+        "fieldType": "text",
+        "hasUniqueValue": true,
+        "readOnlyValue": true,
+        "formField": true
+      },
+      {
+        "name": "is_certified",
+        "label": "Certified Pre-Owned",
+        "type": "bool",
+        "fieldType": "booleancheckbox",
+        "groupName": "vehicle_status",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "true"
+          },
+          {
+            "label": "No",
+            "value": "false"
+          }
+        ]
+
+      },
+      {
+        "name": "condition",
+        "label": "Condition",
+        "type": "enumeration",
+        "fieldType": "radio",
+        "groupName": "vehicle_status",
+        "options": [
+          {
+            "label": "Excellent",
+            "value": "excellent"
+          },
+          {
+            "label": "Good",
+            "value": "good",
+            "displayOrder": 1
+          },
+          {
+            "label": "Fair",
+            "value": "fair",
+            "displayOrder": 2
+          }
+        ]
+      },
+      {
+        "name": "features",
+        "label": "Features",
+        "type": "enumeration",
+        "fieldType": "checkbox",
+        "groupName": "specifications",
+        "options": [
+          {
+            "label": "Air Conditioning",
+            "value": "ac"
+          },
+          {
+            "label": "Leather Seats",
+            "value": "leather_seats"
+          }
+        ]
+      },
+      {
+        "name": "last_service_date",
+        "label": "Last Service Date",
+        "type": "date",
+        "fieldType": "date",
+        "groupName": "maintenance_history"
+      },
+      {
+        "name": "purchase_datetime",
+        "label": "Purchase Date & Time",
+        "type": "datetime",
+        "fieldType": "date",
+        "readOnlyValue": true,
+        "groupName": "purchase_info"
+      },
+      {
+        "name": "marketing_image",
+        "label": "Marketing Image",
+        "type": "string",
+        "fieldType": "file",
+        "groupName": "marketing_materials"
+      },
+      {
+        "name": "owner_contact",
+        "label": "Owner Contact",
+        "type": "string",
+        "fieldType": "phonenumber",
+        "groupName": "contact_info"
+      },
+      {
+        "name": "vehicle_description",
+        "label": "Vehicle Description",
+        "type": "string",
+        "fieldType": "textarea",
+        "groupName": "specifications"
+      },
+      {
+        "name": "calculated_value",
+        "label": "Calculated Market Value",
+        "description": "Auto-calculated market value based on depreciation",
+        "type": "number",
+        "fieldType": "calculation_equation",
+        "calculationFormula": "SUBTRACT(msrp, MULTIPLY(msrp, 0.15))",
+        "readOnlyValue": true,
+        "groupName": "pricing_info"
+      },
+      {
+        "name": "warranty_details",
+        "label": "Warranty Details",
+        "type": "string",
+        "fieldType": "html",
+        "hidden": true,
+        "groupName": "warranty_info"
       }
     ],
-    "primaryDisplayLabelPropertyName": "model",
-    "secondaryDisplayLabelPropertyNames": [
-      "make"
+    "propertyGroups": [
+      {
+        "name": "pricing_info",
+        "label": "Pricing Information"
+      },
+      {
+        "name": "vehicle_status",
+        "label": "Vehicle Status"
+      },
+      {
+        "name": "specifications",
+        "label": "Specifications"
+      },
+      {
+        "name": "maintenance_history",
+        "label": "Maintenance History"
+      },
+      {
+        "name": "purchase_info",
+        "label": "Purchase Information"
+      },
+      {
+        "name": "marketing_materials",
+        "label": "Marketing Materials"
+      },
+      {
+        "name": "contact_info",
+        "label": "Contact Information"
+      },
+      {
+        "name": "warranty_info",
+        "label": "Warranty Information"
+      }
+    ],
+    "defaultCreateFormFields": [
+      {
+        "propertyName": "model",
+        "isRequired": true,
+        "isRemovable": false
+      },
+      {
+        "propertyName": "make",
+        "isRequired": true,
+        "isRemovable": false
+      },
+      {
+        "propertyName": "year",
+        "isRequired": true,
+        "isRemovable": false
+      },
+      {
+        "propertyName": "is_certified",
+        "isRequired": false,
+        "isRemovable": true
+      },
+      {
+        "propertyName": "condition",
+        "isRequired": false,
+        "isRemovable": true
+      }
     ],
     "settings": {
       "hasRecordPage": true,
