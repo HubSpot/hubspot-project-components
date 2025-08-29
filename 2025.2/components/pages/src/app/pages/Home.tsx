@@ -1,6 +1,6 @@
 import React from "react";
 import { EmptyState, Text, hubspot } from "@hubspot/ui-extensions";
-import { HeaderActions, PrimaryHeaderActionButton, SecondaryHeaderActionButton } from '@hubspot/ui-extensions/experimental';
+import { HeaderActions, PrimaryHeaderActionButton, SecondaryHeaderActionButton } from "@hubspot/ui-extensions/pages/home";
 
 hubspot.extend<"home">(({ context }) => {
   return <NewHomesPage context={context} />;
