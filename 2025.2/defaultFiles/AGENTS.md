@@ -1,16 +1,12 @@
----
-description: HubSpot component project rules
-globs: ["**/*-hsmeta.json", "hsproject.json", "app/**/*"]
-alwaysApply: true
----
+# AGENTS.md
 
 IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO MANUALLY USE CLI COMMANDS OR BEFORE TRYING TO DO ANYTHING WITH HUBSPOT ASSETS
 
 ## HubSpot Project Information
 - The project configuration is in the `hsproject.json` file
-- A directory is considered a part of the project if it or a directory above it contains a `hsproject.json` file
+- A directory is considered a part of the project it or a directory above it contains a `hsproject.json` file
 - The project src directory is defined in the `srcDir` field in the `hsproject.json`
-- The project's platform version is defined in `platformVersion` field in the `hs project.json`
+- The project's platform version is defined in `platformVersion` in the `hs project.json`
 - The `platformVersion` determines what features the project has access to as well as the shape of the configuration files
 
 ## npm packages
@@ -39,7 +35,7 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 
 ### app-event
 - `app-event` components must be in the `app/app-events` directory
-
+-
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 
@@ -47,7 +43,7 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 - `app-function` components must be in the `app/functions` directory
 - `app-function` components are not available when `config.distribution` is set to `marketplace` in the `app` component `-hsmeta.son` file
 
-### settings
+# settings
 - There can only be one `settings` component
 - `settings` components must be in the `app/settings` directory
 - The global `window` object is not available in the `settings` component
@@ -55,11 +51,11 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 - Only components exported from the `@hubspot/ui-extensions` npm package can be used in `settings` components
 - React Components from `@hubspot/ui-extensions/crm` cannot be used in `settings` components
 
-### scim
+# scim
 - There can only be one `scim` component
 - `scim` components must be in the `app/scim` directory
 
-### webhooks
+# webhooks
 - There can only be one `webhooks` component.
 - `webhooks` components must be in the `app/webhooks` directory
 - `webhooks` components can only be in projects where `config.distribution` is private and `config.auth.type` is `static`
