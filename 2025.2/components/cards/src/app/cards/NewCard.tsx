@@ -21,8 +21,6 @@ const Extension = ({ context }) => {
           Add a layer of UI customization to your app by including app cards that can display data, allow users to perform actions, and more.
           Check out the <Link href={appCardDocsLink}>app card documentation</Link> for more info.
         </Text>
-        <Text>Context object:</Text>
-        <Text variant='microcopy'>{JSON.stringify(context, null, 2)}</Text>
       </EmptyState>
     </>
   );
