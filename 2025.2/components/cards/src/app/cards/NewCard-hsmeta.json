@@ -4,7 +4,7 @@
   "config": {
     "name": "Example Card",
     "location": "crm.record.tab",
-    "entrypoint": "/app/cards/NewCard.jsx",
+    "entrypoint": "/app/cards/NewCard.tsx",
     "objectTypes": [
       "contacts"
     ]
