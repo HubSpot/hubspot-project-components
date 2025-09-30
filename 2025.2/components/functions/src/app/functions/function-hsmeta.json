@@ -1,5 +1,5 @@
 {
-  "uid": "my_function",
+  "uid": "app_function",
   "type": "app-function",
   "config": {
     "entrypoint": "/app/functions/NewFunction.js",

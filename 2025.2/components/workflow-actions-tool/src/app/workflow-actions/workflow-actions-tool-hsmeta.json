@@ -1,5 +1,5 @@
 {
-  "uid": "example_workflow_action",
+  "uid": "workflow_action_tool",
   "type": "workflow-action",
   "config": {
     "actionUrl": "https://example.com",
