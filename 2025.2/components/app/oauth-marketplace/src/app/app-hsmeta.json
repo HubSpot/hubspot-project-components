@@ -1,5 +1,5 @@
 {
-  "uid": "sample-oauth-marketplace-app",
+  "uid": "sample_oauth_marketplace_app",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a marketplace app with developer projects.",

@@ -1,5 +1,5 @@
 {
-  "uid": "my_app_event",
+  "uid": "app_event",
   "type": "app-event",
   "config": {
     "name": "Webinar Registration",
