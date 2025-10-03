@@ -1,0 +1,19 @@
+{
+  "name": "getting-started-with-cms-react",
+  "description": "Getting started with CMS React",
+  "devDependencies": {
+    "@hubspot/prettier-plugin-hubl": "latest",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1"
+  },
+  "scripts": {
+    "start": "cd src/theme/my-theme && npm start",
+    "prettier": "prettier . --check",
+    "deploy": "hs project upload"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
