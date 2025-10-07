@@ -29,7 +29,7 @@
     },
     {
       "label": "CMS Asset",
-      "type": "CMS Asset",
+      "type": "cms-asset",
       "path": "components/cms-asset"
     }
   ],
