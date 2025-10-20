@@ -1,0 +1,14 @@
+{
+  "servers": [
+    { "name":"voiceops",   "url":"http://localhost:5057/health", "auth":{"type":"token","env":"VOICEOPS_TOKEN"},   "timeoutMs":3000, "charter":"AIOEAC_v1.3" },
+    { "name":"transcribe", "url":"http://localhost:5058/health", "auth":{"type":"token","env":"TRANSCRIBE_TOKEN"}, "timeoutMs":5000, "charter":"AIOEAC_v1.3" },
+    { "name":"gemini",     "url":"https://example.com/gemini/health",     "auth":{"type":"oidc","env":"GCP_OIDC_TOKEN"},    "timeoutMs":5000, "charter":"AIOEAC_v1.3" },
+    { "name":"vertexai",   "url":"https://example.com/vertex/health",     "auth":{"type":"oidc","env":"GCP_OIDC_TOKEN"},    "timeoutMs":8000, "charter":"AIOEAC_v1.3" },
+    { "name":"claude",     "url":"http://localhost:5061/health",  "auth":{"type":"token","env":"CLAUDE_TOKEN"},     "timeoutMs":3000, "charter":"AIOEAC_v1.3" },
+    { "name":"codex",      "url":"http://localhost:5056/health",  "auth":{"type":"token","env":"CODEX_TOKEN"},      "timeoutMs":3000, "charter":"AIOEAC_v1.3" },
+    { "name":"custodian",  "url":"http://localhost:5062/health",  "auth":{"type":"token","env":"CUSTODIAN_TOKEN"},  "timeoutMs":3000, "charter":"AIOEAC_v1.3" },
+    { "name":"heartbeat",  "url":"http://localhost:5063/health",  "auth":{"type":"token","env":"HEARTBEAT_TOKEN"},  "timeoutMs":3000, "charter":"AIOEAC_v1.3" },
+    { "name":"mcp-teamwork", "url":"http://localhost:5059/health", "auth":{"type":"header","header":"Authorization","envVar":"TEAMWORK_API_KEY"}, "timeoutMs":5000, "charter":"AIOEAC_v1.3" },
+    { "name":"mmc-edge-n8n", "url":"http://localhost:5070/health", "auth":{"type":"token","env":"N8N_TOKEN"}, "timeoutMs":5000, "charter":"AIOEAC_v1.3", "version":"1.0.0", "sealed":true }
+  ]
+}
