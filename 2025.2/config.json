@@ -21,6 +21,16 @@
       "authType": "oauth",
       "distribution": "marketplace",
       "path": "components/app/oauth-marketplace"
+    },
+    {
+      "label": "Theme",
+      "type": "theme",
+      "path": "components/theme"
+    },
+    {
+      "label": "CMS Asset",
+      "type": "cms-asset",
+      "path": "components/cms-asset"
     }
   ],
   "components": [
