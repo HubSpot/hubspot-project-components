@@ -60,7 +60,6 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 # webhooks
 - There can only be one `webhooks` component.
 - `webhooks` components must be in the `app/webhooks` directory
-- `webhooks` components can only be in projects where `config.distribution` is private and `config.auth.type` is `static`
 
 ### workflow-actions
 - `workflow-action` components must be in the `app/workflow-actions` directory
