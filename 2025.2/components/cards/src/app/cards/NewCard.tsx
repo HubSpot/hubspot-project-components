@@ -2,7 +2,7 @@ import React from "react";
 import { EmptyState, Link, Text } from "@hubspot/ui-extensions";
 import { hubspot } from "@hubspot/ui-extensions";
 
-hubspot.extend(({ context }) => <Extension context={context} />);
+hubspot.extend<'crm.record.tab'>(({ context }) => <Extension context={context} />);
 
 const Extension = ({ context }) => {
 
