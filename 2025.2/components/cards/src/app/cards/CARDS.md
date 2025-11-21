@@ -1,8 +1,10 @@
-# HubSpot Card Component
+# HubSpot App Cards
 
 ## Overview
 
-HubSpot card components are React-based UI extensions that display custom content within CRM record pages (contacts, companies, deals, etc.). Cards allow you to extend the HubSpot CRM interface with custom functionality, data visualization, and interactive elements.
+HubSpot cards are React-based UI extensions that display custom content within CRM record pages (contacts, companies, deals, etc.). Cards allow you to extend the HubSpot CRM interface with custom functionality, data visualization, and interactive elements.
+
+Cards are stored in the `src/app/cards/` directory of your HubSpot project.
 
 ## Structure
 
@@ -11,11 +13,7 @@ Each card component consists of two files:
 1. **React Component (`.jsx` or `.tsx`)**: Contains the UI logic and rendering code using React and HubSpot's UI extension components from `@hubspot/ui-extensions`.
 2. **Configuration File (`*-hsmeta.json`)**: Defines the card's metadata
 
-## Usage in Projects
-
-Cards are stored in the `src/app/cards/` directory of your HubSpot project. To add a new card run `hs project add` and select **Card** when prompted
-
-## Viewing in HubSpot
+## Using App Cards
 
 After uploading your project with `hs project upload`, cards must be manually added to record views:
 
@@ -27,10 +25,6 @@ After uploading your project with `hs project upload`, cards must be manually ad
 6. Save the view
 
 Cards will then appear on all records of the specified object types in that view.
-
-## Development
-
-Use `hs project dev` to start local development. The development server will automatically reload when you make changes to your React component files, allowing for rapid iteration without re-uploading the project.
 
 ## Resources
 

@@ -9,6 +9,7 @@ HubSpot projects are file-based build-and-deploy frameworks that allow you to de
 - **`hsproject.json`**: Defines your project's name, source directory, and platform version
 - **`src/`**: Contains your project's source code organized by feature type (apps, cards, functions, etc.)
 - **`*-hsmeta.json` files**: Configuration files that define metadata for each component
+- **`hsprofile.*.json` files**: Profile configuration containing a target account ID and variables
 
 ## Getting Started
 
@@ -22,15 +23,9 @@ HubSpot projects are file-based build-and-deploy frameworks that allow you to de
 - [Developer Platform Overview](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview) - Learn about building apps on version 2025.2
 - [Project Commands Reference](https://developers.hubspot.com/docs/developer-tooling/local-development/hubspot-cli/project-commands) - Complete CLI command reference
 
-### Adding Features
+### Adding Features to your app
 
-- **App Cards**: Extend CRM record pages with custom React components
-- **Settings Pages**: Create configuration interfaces for your app
-- **Webhooks**: Receive real-time notifications from HubSpot
-- **Workflow Actions**: Add custom actions to HubSpot workflows
-- **Serverless Functions**: Build API endpoints for your app
-
-Use `hs project add` to interactively add features to your project, or check the [feature documentation](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview#features) for available options.
+Use `hs project add` to interactively add new features to your project, or check the [feature documentation](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview#features) for available options.
 
 ### Resources
 - [HubSpot Developer Documentation](https://developers.hubspot.com/docs)
