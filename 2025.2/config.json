@@ -114,6 +114,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/app-object-associations",
+      "type": "app-object-association",
+      "label": "App Object Association",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }
