@@ -21,6 +21,16 @@
       "authType": "oauth",
       "distribution": "marketplace",
       "path": "components/app/oauth-marketplace"
+    },
+    {
+      "label": "Theme",
+      "type": "theme",
+      "path": "components/theme"
+    },
+    {
+      "label": "CMS Asset",
+      "type": "cms-asset",
+      "path": "components/cms-asset"
     }
   ],
   "components": [
@@ -104,6 +114,14 @@
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/app-object-associations",
+      "type": "app-object-association",
+      "label": "App Object Association",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
     }
   ]
 }

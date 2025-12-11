@@ -1,0 +1,8 @@
+{
+  "uid": "cms-asset",
+  "type": "cms-assets",
+  "config": {
+    "themePath": "my-asset",
+    "secretNames": []
+  }
+}

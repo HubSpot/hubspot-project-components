@@ -1,5 +1,5 @@
 {
-  "uid": "sample-static-private-app",
+  "uid": "sample_static_private_app",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a static private app with developer projects.",
@@ -8,6 +8,7 @@
     "auth": {
       "type" : "static",
       "requiredScopes": [
+        "oauth",
         "crm.objects.contacts.read",
         "crm.objects.contacts.write"
       ],

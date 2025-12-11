@@ -1,10 +1,10 @@
 {
-  "uid": "example_card",
+  "uid": "card_extension",
   "type": "card",
   "config": {
-    "name": "Example Card",
+    "name": "New Card",
     "location": "crm.record.tab",
-    "entrypoint": "/app/cards/NewCard.jsx",
+    "entrypoint": "/app/cards/NewCard.tsx",
     "objectTypes": [
       "contacts"
     ]

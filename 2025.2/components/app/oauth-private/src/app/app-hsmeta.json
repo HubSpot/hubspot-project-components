@@ -1,5 +1,5 @@
 {
-  "uid": "sample-oauth-private-app",
+  "uid": "sample_oauth_private_app",
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a private oauth app with developer projects.",
@@ -9,6 +9,7 @@
       "type" : "oauth",
       "redirectUrls": ["http://localhost:3000"],
       "requiredScopes": [
+        "oauth",
         "crm.objects.contacts.read",
         "crm.objects.contacts.write"
       ],
