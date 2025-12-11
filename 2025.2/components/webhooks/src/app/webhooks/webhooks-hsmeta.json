@@ -10,31 +10,31 @@
         "crmObjects": [
           {
             "subscriptionType": "object.creation",
-            "objectType": "contact", 
-            "active": true
+            "objectType": "contact",
+            "active": false
           },
           {
             "subscriptionType": "object.propertyChange",
-            "objectType": "contact", 
+            "objectType": "contact",
             "propertyName": "firstname",
-            "active": true
+            "active": false
           }
         ],
         "legacyCrmObjects": [
           {
             "subscriptionType": "contact.propertyChange",
             "propertyName": "lastname",
-            "active": true
+            "active": false
           },
           {
             "subscriptionType": "contact.deletion",
-            "active": true
+            "active": false
           }
         ],
         "hubEvents": [
           {
             "subscriptionType": "contact.privacyDeletion",
-            "active": true
+            "active": false
           }
         ]
       }
