@@ -26,7 +26,7 @@ const AppHomePage = ({ context }) => {
         </SecondaryHeaderActionButton>
       </HeaderActions>
       <EmptyState
-        title="Build your application home page here!"
+        title="Build your app home page here!"
         layout="horizontal"
         imageName='building'
       >
