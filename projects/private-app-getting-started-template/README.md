@@ -8,7 +8,7 @@ There are a few things that must be set up before you can make use of this getti
 
 - You must have an active HubSpot account.
 - You must have the [HubSpot CLI](https://www.npmjs.com/package/@hubspot/cli) installed and set up.
-- You must have access to developer projects (developer projects are currently [in public beta under "CRM Development Tools"](https://app.hubspot.com/l/whats-new/betas)).
+- You must have access to developer projects.
 
 ## Usage
 
