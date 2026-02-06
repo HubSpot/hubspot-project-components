@@ -7,13 +7,13 @@ In this example we actually add overrides for two [preloaded packages](https://d
 
 ```
 {
-  "name": "demo.functions",
-  "version": "1.0.0",
-  "description": "",
+ "name": "hubspot-example-function",
+  "version": "0.1.0",
+  "author": "HubSpot",
+  "license": "MIT",
   "dependencies": {
     "@hubspot/api-client": "^7.0.1",
-    "axios": "^0.27.2",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   }
 }
 ```
