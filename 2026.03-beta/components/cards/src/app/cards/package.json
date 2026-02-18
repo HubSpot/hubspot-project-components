@@ -1,0 +1,15 @@
+{
+  "name": "hubspot-example-extension",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@hubspot/ui-extensions": "latest",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.26",
+    "eslint": "^9.37.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "uid": "app_object_to_contact_association",
+  "type": "app-object-association",
+  "config": {
+    "firstObjectType": "app_object",
+    "secondObjectType": "CONTACT"
+  }
+}

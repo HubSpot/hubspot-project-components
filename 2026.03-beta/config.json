@@ -1,0 +1,127 @@
+{
+  "defaultFiles": "./defaultFiles",
+  "parentComponents": [
+    {
+      "label": "Static Private App",
+      "type": "app",
+      "authType": "static",
+      "distribution": "private",
+      "path": "components/app/static-private"
+    },
+    {
+      "label": "OAuth Private App",
+      "type": "app",
+      "authType": "oauth",
+      "distribution": "private",
+      "path": "components/app/oauth-private"
+    },
+    {
+      "label": "OAuth Marketplace App",
+      "type": "app",
+      "authType": "oauth",
+      "distribution": "marketplace",
+      "path": "components/app/oauth-marketplace"
+    },
+    {
+      "label": "Theme",
+      "type": "theme",
+      "path": "components/theme"
+    },
+    {
+      "label": "CMS Asset",
+      "type": "cms-asset",
+      "path": "components/cms-asset"
+    }
+  ],
+  "components": [
+    {
+      "path": "components/cards",
+      "label": "Card",
+      "type": "card",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/functions",
+      "label": "Public Function",
+      "type": "app-function",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private"]
+    },
+    {
+      "path": "components/settings",
+      "label": "Settings",
+      "type": "settings",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static"],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/webhooks",
+      "type": "webhooks",
+      "label": "Webhook",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/workflow-actions",
+      "type": "workflow-action",
+      "label": "Custom Workflow Action",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/workflow-actions-tool",
+      "type": "workflow-action",
+      "cliSelector": "workflow-action-tool",
+      "label": "Agent Tool",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/scim",
+      "type": "scim",
+      "label": "SCIM Integration",
+      "parentType": "app",
+      "supportedAuthTypes": ["static"],
+      "supportedDistributions": ["private"]
+    },
+    {
+      "path": "components/app-objects",
+      "type": "app-object",
+      "label": "App Object",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
+    },
+    {
+      "path": "components/app-events",
+      "type": "app-event",
+      "label": "App Events",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
+    },
+    {
+      "path": "components/pages",
+      "type": "page",
+      "label": "Home",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth", "static" ],
+      "supportedDistributions": ["private", "marketplace"]
+    },
+    {
+      "path": "components/app-object-associations",
+      "type": "app-object-association",
+      "label": "App Object Association",
+      "parentType": "app",
+      "supportedAuthTypes": ["oauth"],
+      "supportedDistributions": ["marketplace"]
+    }
+  ]
+}
