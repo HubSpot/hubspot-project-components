@@ -9,20 +9,12 @@ export default [
   js.configs.recommended,
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
-  ...uiExtensionsConfig,
   {
-    files: ['**/*.{js,jsx}'],
-    languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      parserOptions: {
-        ecmaFeatures: { jsx: true },
-      },
-    },
     settings: {
       react: { version: 'detect' },
     },
   },
+  ...uiExtensionsConfig,
   reactHooks.configs.flat['recommended-latest'],
   {
     plugins: {

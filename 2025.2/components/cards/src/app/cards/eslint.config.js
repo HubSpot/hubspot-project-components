@@ -25,6 +25,7 @@ export default defineConfig([
       'unused-imports': unusedImports,
     },
     rules: {
+      'react/prop-types': 'off',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'error',
