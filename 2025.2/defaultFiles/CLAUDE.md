@@ -133,6 +133,7 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 - `hs project migrate` - Migrate a project to a newer platform version
 - `hs project migrate-app` - Migrate a legacy app to the projects framework
 - `hs project clone-app` - Clone an existing app configuration
+- `hs project lint` - Run linting on cards, settings, and page components
 
 ### Account Management
 - `hs init` - Initial setup of the hubspot configuration file

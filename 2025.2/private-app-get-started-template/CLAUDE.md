@@ -75,6 +75,7 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 - `hs init` is required to set up the hubspot configuration file
 - `hs auth` will authenticate a new account.  This will require a user to open a browser and paste a token in a CLI prompt.
 - All the commands for managing HubSpot accounts in the CLI are subcommands of `hs account`
+- `hs project lint` - Run linting on cards, settings, and page components
 
 ## General
 - Follow existing patterns in the codebase
