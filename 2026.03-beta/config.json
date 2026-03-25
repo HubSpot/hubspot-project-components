@@ -44,7 +44,7 @@
     },
     {
       "path": "components/functions-public",
-      "label": "Public Function",
+      "label": "App Function(with Endpoint)",
       "type": "app-function",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
@@ -52,7 +52,7 @@
     },
     {
       "path": "components/functions-private",
-      "label": "Private Function",
+      "label": "App Function",
       "type": "app-function",
       "cliSelector": "app-function-private",
       "parentType": "app",
