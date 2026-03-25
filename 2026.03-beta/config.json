@@ -56,7 +56,7 @@
       "type": "app-function",
       "cliSelector": "app-function-private",
       "parentType": "app",
-      "supportedAuthTypes": ["oauth", "static"],
+      "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
     },
     {
