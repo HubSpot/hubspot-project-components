@@ -46,15 +46,15 @@
       "path": "components/functions-public",
       "label": "App Function(with Endpoint)",
       "type": "app-function",
-      "cliSelector": "app-function-public",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
       "supportedDistributions": ["private"]
     },
     {
       "path": "components/functions-private",
-      "label": "App Function",
+      "label": "App Function(without Endpoint)",
       "type": "app-function",
+      "cliSelector": "app-function-without-endpoint",
       "parentType": "app",
       "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
