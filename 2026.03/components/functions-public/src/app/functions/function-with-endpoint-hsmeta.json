@@ -1,0 +1,8 @@
+{
+  "uid": "app_function",
+  "type": "app-function",
+  "config": {
+    "entrypoint": "/app/functions/FunctionWithEndpoint.js",
+    "secretKeys": []
+  }
+}
