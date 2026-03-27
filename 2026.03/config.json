@@ -43,18 +43,19 @@
       "supportedDistributions": ["private", "marketplace"]
     },
     {
-      "path": "components/functions-public",
-      "label": "App Function(with Endpoint)",
+      "path": "components/functions-endpoint",
+      "label": "App Function (endpoint)",
       "type": "app-function",
+      "cliSelector": "app-function-endpoint",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
       "supportedDistributions": ["private"]
     },
     {
       "path": "components/functions-private",
-      "label": "App Function(without Endpoint)",
+      "label": "App Function (private)",
       "type": "app-function",
-      "cliSelector": "app-function-without-endpoint",
+      "cliSelector": "app-function-private",
       "parentType": "app",
       "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
