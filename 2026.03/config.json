@@ -45,6 +45,7 @@
     {
       "path": "components/functions-endpoint",
       "label": "App Function (endpoint)",
+      "cliSelector": "app-function-endpoint",
       "type": "app-function",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static"],
