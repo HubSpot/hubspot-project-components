@@ -6,8 +6,6 @@
     "description": "Provides detailed information about a contact.",
     "entrypoint": "/app/cards/get-started-app-card.tsx",
     "location": "crm.record.tab",
-    "objectTypes": [
-      "CONTACT"
-    ]
+    "objectTypes": ["CONTACT"]
   }
 }
