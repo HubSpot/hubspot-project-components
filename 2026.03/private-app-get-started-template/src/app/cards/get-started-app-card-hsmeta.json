@@ -1,0 +1,13 @@
+{
+  "uid": "get_started_app_card_private_static",
+  "type": "card",
+  "config": {
+    "name": "Get Started App Card",
+    "description": "Provides detailed information about a contact.",
+    "entrypoint": "/app/cards/get-started-app-card.tsx",
+    "location": "crm.record.tab",
+    "objectTypes": [
+      "CONTACT"
+    ]
+  }
+}
