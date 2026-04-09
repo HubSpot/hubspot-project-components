@@ -119,7 +119,7 @@
     {
       "path": "components/pages",
       "type": "page",
-      "label": "Home",
+      "label": "Pages",
       "parentType": "app",
       "supportedAuthTypes": ["oauth", "static" ],
       "supportedDistributions": ["private", "marketplace"]
