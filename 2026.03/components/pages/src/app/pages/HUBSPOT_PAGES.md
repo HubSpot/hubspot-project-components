@@ -1,48 +1,96 @@
-# HubSpot App Home Pages
+# HubSpot App Pages
 
 ## Overview
 
-App home pages are React-based landing pages that provide a custom experience when users navigate to your app in HubSpot. Built with React and powered by the UI extensions SDK, home pages use the same toolkit available for app cards and settings pages, including HubSpot's UI components and data fetching utilities.
+App pages are React-based multi-page experiences for your app in HubSpot. Built with a client-side router, they support multiple routes, in-app navigation, breadcrumbs, and header actions — all using HubSpot's UI extension components.
 
-**Note:** This feature requires signing up for the public beta. Sign up [here](https://app.hubspot.com/l/product-updates/new-to-you?rollout=237984).
+App pages are stored in the `src/app/pages/` directory of your HubSpot project.
 
-App home pages are stored in the `src/app/pages/` directory of your HubSpot project.
+## File Structure
 
-## Structure
+```
+src/app/pages/
+├── Pages.tsx            # Router entry point and layout
+├── HomePage.tsx         # Home (index) route
+├── DocsPage.tsx         # Documentation route
+├── pages-hsmeta.json    # Extension configuration
+├── package.json         # Dependencies
+└── HUBSPOT_PAGES.md     # This file
+```
 
-Each app home page consists of three files:
+## Router Setup
 
-1. **React Component (`.jsx` or `.tsx`)**: Contains the UI logic and rendering code using React and HubSpot's UI extension components from `@hubspot/ui-extensions`
-2. **Configuration File (`*-hsmeta.json`)**: Defines the page's metadata, entrypoint, and location
-3. **Package File (`package.json`)**: Defines dependencies for the page component
+The router is created with `createPageRouter` and `PageRoutes` from `@hubspot/ui-extensions/pages`:
 
-The configuration file defines:
-- `entrypoint`: The file path to your React component that renders the home page
-- `location`: Set to `"home"` for app home pages
+```tsx
+import { createPageRouter, PageRoutes } from "@hubspot/ui-extensions/pages";
 
-## Using App Home Pages
+const PageRouter = createPageRouter(
+  <PageRoutes layoutComponent={PageLayout}>
+    <PageRoutes.IndexRoute component={HomePage} />
+    <PageRoutes.Route path="/docs" component={DocsPage} />
+  </PageRoutes>
+);
 
-After uploading your project with `hs project upload`, users can access the home page:
+hubspot.extend<"pages">(() => <PageRouter />);
+```
 
-1. In HubSpot, click the **Marketplace** icon
-2. In the *Your recently visited apps* section, click the name of your app
-3. Alternatively, access directly at: `https://app.hubspot.com/app/{HubID}/{appId}`
+- `PageRoutes.IndexRoute` renders at the root path
+- `PageRoutes.Route` renders at the specified `path`
+- `layoutComponent` wraps all routes with shared UI (like the header)
 
-The home page will display your React component, providing a custom landing experience for your app.
+## Layout and PageHeader
 
-## Home Page Components
+The `PageHeader` component adds action buttons to the app's header area. It supports a primary action and multiple secondary actions:
 
-In addition to standard UI components, app home pages have three specialized components for header action buttons:
+```tsx
+import { PageHeader } from "@hubspot/ui-extensions/pages";
 
-- `<HeaderActions>`: Wrapper component for header action buttons
-- `<PrimaryHeaderActionButton>`: Primary action button (orange, one per page)
-- `<SecondaryHeaderActionButton>`: Secondary action buttons (appear in an Actions dropdown)
+<PageHeader>
+  <PageHeader.PrimaryAction>
+    <PageHeader.Link href="https://example.com">External Link</PageHeader.Link>
+  </PageHeader.PrimaryAction>
+  <PageHeader.SecondaryActions>
+    <PageHeader.Link onClick={() => console.log('clicked')}>Action</PageHeader.Link>
+  </PageHeader.SecondaryActions>
+</PageHeader>
+```
 
-These components are imported from `@hubspot/ui-extensions/pages/home` and require version `0.10.0` or later of the `@hubspot/ui-extensions` package.
+## In-App Navigation with PageLink
+
+Use `PageLink` to navigate between routes within your app:
+
+```tsx
+import { PageLink } from "@hubspot/ui-extensions/pages";
+
+<PageLink to="/docs">Go to Documentation</PageLink>
+```
+
+## Breadcrumbs
+
+`PageBreadcrumbs` provides navigation context. Use `PageBreadcrumbs.PageLink` for clickable breadcrumb links and `PageBreadcrumbs.Current` for the active page:
+
+```tsx
+import { PageBreadcrumbs } from "@hubspot/ui-extensions/pages";
+
+<PageBreadcrumbs>
+  <PageBreadcrumbs.PageLink to="/">Home</PageBreadcrumbs.PageLink>
+  <PageBreadcrumbs.Current>Documentation</PageBreadcrumbs.Current>
+</PageBreadcrumbs>
+```
+
+## Page Titles
+
+Use `PageTitle` to set the heading for each page:
+
+```tsx
+import { PageTitle } from "@hubspot/ui-extensions/pages";
+
+<PageTitle>Documentation</PageTitle>
+```
 
 ## Resources
 
-- [Create an App Home Page](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/create-an-app-home-page): Complete guide to creating app home pages
+- [App Pages Overview](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/extension-points/app-pages/overview): Guide to creating app pages
 - [UI Extension Components](https://developers.hubspot.com/docs/platform/ui-components): Library of available UI components
 - [UI Extensions SDK](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/ui-extensions-sdk): Available utilities and methods
-
