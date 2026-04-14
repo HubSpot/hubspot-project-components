@@ -1,6 +1,6 @@
 {
   "uid": "app_pages_extension",
-  "type": "pages",
+  "type": "page",
   "config": {
     "entrypoint": "/app/pages/Pages.tsx"
   }
