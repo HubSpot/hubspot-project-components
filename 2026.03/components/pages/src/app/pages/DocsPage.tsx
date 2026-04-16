@@ -1,6 +1,5 @@
-import React from "react";
-import { Text } from "@hubspot/ui-extensions";
-import { PageBreadcrumbs, PageTitle } from "@hubspot/ui-extensions/pages";
+import { Text } from '@hubspot/ui-extensions';
+import { PageBreadcrumbs, PageTitle } from '@hubspot/ui-extensions/pages';
 
 export const DocsPage = () => {
   return (

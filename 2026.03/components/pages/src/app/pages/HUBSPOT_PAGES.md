@@ -23,16 +23,16 @@ src/app/pages/
 The router is created with `createPageRouter` and `PageRoutes` from `@hubspot/ui-extensions/pages`:
 
 ```tsx
-import { createPageRouter, PageRoutes } from "@hubspot/ui-extensions/pages";
+import { createPageRouter, PageRoutes } from '@hubspot/ui-extensions/pages';
 
 const PageRouter = createPageRouter(
   <PageRoutes layoutComponent={PageLayout}>
     <PageRoutes.IndexRoute component={HomePage} />
     <PageRoutes.Route path="/docs" component={DocsPage} />
-  </PageRoutes>
+  </PageRoutes>,
 );
 
-hubspot.extend<"pages">(() => <PageRouter />);
+hubspot.extend<'pages'>(() => <PageRouter />);
 ```
 
 - `PageRoutes.IndexRoute` renders at the root path
@@ -44,16 +44,18 @@ hubspot.extend<"pages">(() => <PageRouter />);
 The `PageHeader` component adds action buttons to the app's header area. It supports a primary action and multiple secondary actions:
 
 ```tsx
-import { PageHeader } from "@hubspot/ui-extensions/pages";
+import { PageHeader } from '@hubspot/ui-extensions/pages';
 
 <PageHeader>
   <PageHeader.PrimaryAction>
     <PageHeader.Link href="https://example.com">External Link</PageHeader.Link>
   </PageHeader.PrimaryAction>
   <PageHeader.SecondaryActions>
-    <PageHeader.Link onClick={() => console.log('clicked')}>Action</PageHeader.Link>
+    <PageHeader.Link onClick={() => console.log('clicked')}>
+      Action
+    </PageHeader.Link>
   </PageHeader.SecondaryActions>
-</PageHeader>
+</PageHeader>;
 ```
 
 ## In-App Navigation with PageLink
@@ -61,9 +63,9 @@ import { PageHeader } from "@hubspot/ui-extensions/pages";
 Use `PageLink` to navigate between routes within your app:
 
 ```tsx
-import { PageLink } from "@hubspot/ui-extensions/pages";
+import { PageLink } from '@hubspot/ui-extensions/pages';
 
-<PageLink to="/docs">Go to Documentation</PageLink>
+<PageLink to="/docs">Go to Documentation</PageLink>;
 ```
 
 ## Breadcrumbs
@@ -71,12 +73,12 @@ import { PageLink } from "@hubspot/ui-extensions/pages";
 `PageBreadcrumbs` provides navigation context. Use `PageBreadcrumbs.PageLink` for clickable breadcrumb links and `PageBreadcrumbs.Current` for the active page:
 
 ```tsx
-import { PageBreadcrumbs } from "@hubspot/ui-extensions/pages";
+import { PageBreadcrumbs } from '@hubspot/ui-extensions/pages';
 
 <PageBreadcrumbs>
   <PageBreadcrumbs.PageLink to="/">Home</PageBreadcrumbs.PageLink>
   <PageBreadcrumbs.Current>Documentation</PageBreadcrumbs.Current>
-</PageBreadcrumbs>
+</PageBreadcrumbs>;
 ```
 
 ## Page Titles
@@ -84,9 +86,9 @@ import { PageBreadcrumbs } from "@hubspot/ui-extensions/pages";
 Use `PageTitle` to set the heading for each page:
 
 ```tsx
-import { PageTitle } from "@hubspot/ui-extensions/pages";
+import { PageTitle } from '@hubspot/ui-extensions/pages';
 
-<PageTitle>Documentation</PageTitle>
+<PageTitle>Documentation</PageTitle>;
 ```
 
 ## Resources
