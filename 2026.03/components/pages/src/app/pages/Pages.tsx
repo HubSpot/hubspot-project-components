@@ -1,8 +1,11 @@
-import React from "react";
-import { hubspot } from "@hubspot/ui-extensions";
-import { createPageRouter, PageHeader, PageRoutes } from "@hubspot/ui-extensions/pages";
-import { HomePage } from "./HomePage";
-import { DocsPage } from "./DocsPage";
+import { hubspot } from '@hubspot/ui-extensions';
+import {
+  createPageRouter,
+  PageHeader,
+  PageRoutes,
+} from '@hubspot/ui-extensions/pages';
+import { HomePage } from './HomePage';
+import { DocsPage } from './DocsPage';
 
 const PageLayout = ({ children }) => {
   return (
@@ -31,7 +34,7 @@ const PageRouter = createPageRouter(
   <PageRoutes layoutComponent={PageLayout}>
     <PageRoutes.IndexRoute component={HomePage} />
     <PageRoutes.Route path="/docs" component={DocsPage} />
-  </PageRoutes>
+  </PageRoutes>,
 );
 
-hubspot.extend<"pages">(() => <PageRouter />);
+hubspot.extend<'pages'>(() => <PageRouter />);

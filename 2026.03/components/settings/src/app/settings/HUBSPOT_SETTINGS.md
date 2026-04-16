@@ -15,6 +15,7 @@ Each settings component consists of three files:
 3. **Package File (`package.json`)**: Defines dependencies for the settings component
 
 The configuration file defines:
+
 - `entrypoint`: The file path to your React component that renders the settings page
 
 ## Using Settings Components
@@ -33,4 +34,3 @@ The settings page will display your React component, allowing users to configure
 - [Create a Settings Page](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/create-a-settings-component): Complete guide to creating settings components
 - [UI Extension Components](https://developers.hubspot.com/docs/platform/ui-components): Library of available UI components
 - [UI Extensions SDK](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/ui-extensions-sdk): Available utilities and methods
-
