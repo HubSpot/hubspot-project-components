@@ -1,0 +1,8 @@
+{
+  "uid": "app_function_private",
+  "type": "app-function",
+  "config": {
+    "entrypoint": "/app/functions/NewFunction.js",
+    "secretKeys": []
+  }
+}
