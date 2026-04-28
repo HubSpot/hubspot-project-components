@@ -20,7 +20,7 @@ HubSpot projects are file-based build-and-deploy frameworks that allow you to de
 
 ### Documentation
 - [Quickstart Guide](https://developers.hubspot.com/docs/getting-started/quickstart) - Get up and running with a demo app
-- [Developer Platform Overview](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview) - Learn about building apps on version 2025.2
+- [Developer Platform Overview](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview) - Learn about building apps on version 2026.03-beta
 - [Project Commands Reference](https://developers.hubspot.com/docs/developer-tooling/local-development/hubspot-cli/project-commands) - Complete CLI command reference
 
 ### Adding Features to your app
