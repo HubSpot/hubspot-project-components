@@ -1,13 +1,20 @@
+import { ExtensionPointApiActions, PagesContext } from '@hubspot/ui-extensions';
 import { hubspot } from '@hubspot/ui-extensions';
 import {
   createPageRouter,
   PageHeader,
   PageRoutes,
+  PageRoutesLayoutProps,
 } from '@hubspot/ui-extensions/pages';
-import { HomePage } from './HomePage';
-import { DocsPage } from './DocsPage';
+import { HomePage } from './HomePage.tsx';
+import { DocsPage } from './DocsPage.tsx';
 
-const PageLayout = ({ children }) => {
+interface PagesExtensionProps {
+  context: PagesContext;
+  actions: ExtensionPointApiActions<'pages'>;
+}
+
+const PageLayout = ({ children }: PageRoutesLayoutProps) => {
   return (
     <>
       <PageHeader>
@@ -37,4 +44,11 @@ const PageRouter = createPageRouter(
   </PageRoutes>,
 );
 
-hubspot.extend<'pages'>(() => <PageRouter />);
+const PagesExtension = ({ context, actions }: PagesExtensionProps) => {
+  console.log({ context, actions });
+  return <PageRouter />;
+};
+
+hubspot.extend<'pages'>(({ context, actions }: PagesExtensionProps) => (
+  <PagesExtension context={context} actions={actions} />
+));

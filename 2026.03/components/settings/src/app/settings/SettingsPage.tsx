@@ -1,9 +1,20 @@
 import { EmptyState, Link, Text } from '@hubspot/ui-extensions';
-import { hubspot } from '@hubspot/ui-extensions';
+import {
+  hubspot,
+  ExtensionPointApiActions,
+  SettingsContext,
+} from '@hubspot/ui-extensions';
 
-hubspot.extend<'settings'>(({ context }) => <SettingsPage context={context} />);
+interface SettingsExtensionProps {
+  context: SettingsContext;
+  actions: ExtensionPointApiActions<'settings'>;
+}
 
-const SettingsPage = ({ context }) => {
+hubspot.extend<'settings'>(({ context, actions }: SettingsExtensionProps) => (
+  <SettingsPage context={context} actions={actions} />
+));
+
+const SettingsPage = ({ context, actions }: SettingsExtensionProps) => {
   console.log({ context });
 
   const appSettingsDocsLink =
