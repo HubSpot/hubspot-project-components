@@ -1,9 +1,23 @@
-import { Text, Link, List, EmptyState } from '@hubspot/ui-extensions';
+import {
+  CrmContext,
+  EmptyState,
+  ExtensionPointApiActions,
+  Link,
+  List,
+  Text,
+} from '@hubspot/ui-extensions';
 import { hubspot } from '@hubspot/ui-extensions';
 
-hubspot.extend<'crm.record.tab'>(() => <Extension />);
+interface ExtensionProps {
+  context: CrmContext;
+  actions: ExtensionPointApiActions<'crm.record.tab'>;
+}
 
-const Extension = () => {
+hubspot.extend<'crm.record.tab'>(({ context, actions }: ExtensionProps) => (
+  <Extension context={context} actions={actions} />
+));
+
+const Extension = ({ context, actions }: ExtensionProps) => {
   const appCardDocsLink =
     'https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/app-cards/overview';
 
