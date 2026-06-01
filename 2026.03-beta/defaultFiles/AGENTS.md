@@ -1,5 +1,7 @@
 # AGENTS.md
 
+This file provides guidance to AI coding agents when working on HubSpot components
+
 IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO MANUALLY USE CLI COMMANDS OR BEFORE TRYING TO DO ANYTHING WITH HUBSPOT ASSETS
 
 ## HubSpot Project Information
@@ -78,6 +80,61 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 - `hubspot.fetch` requires fully qualified HTTPS URLs (e.g., `https://api.example.com/endpoint`) - relative paths like `/api/endpoint` are NOT supported
 - Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components
+
+#### Available Hooks for Card Components
+
+Prefer hooks over `hubspot.fetch` — use hooks to access CRM data and extension context before falling back to `hubspot.fetch` for external HTTP requests. Hooks must be called at the component level, not inside conditionals or loops. The list below may not be exhaustive — refer to the [hooks documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/hooks.md) as the source of truth for all available hooks and their parameters.
+
+**Universal hooks** (available across all extension points):
+- `useExtensionApi` - Access both context and actions from a single hook
+- `useExtensionContext` - Access contextual information about the extension environment (portal, user, extension metadata)
+- `useExtensionActions` - Access all available actions for the current extension point
+- `useCrmSearch` - Search CRM records
+- `useDebounce` - Debounce a rapidly-changing value
+
+**CRM-specific hooks** (available in `crm.record.tab`, `crm.record.sidebar`, `crm.preview`, `helpdesk.sidebar` extension points):
+- `useCrmProperties` - Fetch properties from the current CRM record
+- `useAssociations` - Fetch associated CRM records
+
+#### Available Actions for Card Components
+
+Access actions via the `useExtensionActions` hook or the `actions` parameter from `hubspot.extend()`. The list below may not be exhaustive — refer to the [actions documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/actions.md) as the source of truth for all available actions and their parameters.
+
+**Universal actions** (available across all extension points):
+- `addAlert` - Display an alert banner
+- `reloadPage` - Reload the current page
+- `copyTextToClipboard` - Copy text to clipboard; requires explicit user interaction
+- `closeOverlay` - Close an open overlay or modal by its id
+- `openIframeModal` - Open a URL in an iframe modal
+
+**CRM-specific actions** (available in `crm.record.tab`, `crm.record.sidebar`, `crm.preview`, `helpdesk.sidebar` extension points):
+- `fetchCrmObjectProperties` - Fetch property values from the current CRM record
+- `refreshObjectProperties` - Refresh CRM record properties in the UI without a full page reload
+- `onCrmPropertiesUpdate` - Subscribe to UI-level changes to CRM properties
+
+#### Context Object
+
+Access context via the `useExtensionContext` hook or the `context` parameter from `hubspot.extend()`. The list below may not be exhaustive — refer to the [context documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/context.md) as the source of truth for all available context fields.
+
+**Universal fields** (available on all extension points):
+- `location` - Extension point identifier
+- `portal.id` / `portal.timezone` / `portal.dataHostingLocation` - Account info
+- `user.id` / `user.email` / `user.firstName` / `user.lastName` / `user.locale` / `user.language` / `user.teams` / `user.permissions` - User info
+- `variables` - Project configuration variables
+
+**CRM-specific fields** (available in `crm.record.tab`, `crm.record.sidebar`, `crm.preview`, `helpdesk.sidebar` extension points):
+- `crm.objectId` - Current CRM record's ID
+- `crm.objectTypeId` - Record type ID
+- `extension.appId` / `extension.appName` / `extension.cardTitle` - Extension metadata
+
+#### Logging
+
+Use the `logger` API to send custom log messages. In local development mode, logs go to the browser console only; in production they are sent to HubSpot and viewable via `hs project logs`. The list below may not be exhaustive — refer to the [logging documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/logging.md) as the source of truth for all available logging methods.
+
+- `logger.info` - Informational messages
+- `logger.debug` - Debug messages
+- `logger.warn` - Warning messages
+- `logger.error` - Error messages
 
 ### app-event
 - `app-event` components must be in the `app/app-events` directory
