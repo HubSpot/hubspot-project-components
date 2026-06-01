@@ -52,13 +52,26 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 - Example:
   ```json
   "permittedUrls": {
-    "fetch": ["https://api.example.com", "https://api.hubapi.com"],
+    "fetch": ["https://api.example.com", "https://api.thirdparty.com"],
     "iframe": [],
     "img": []
   }
   ```
 - Fetch URLs must be valid HTTPS URLs and cannot be `localhost`
 - To call a local backend during development, use the `local.json` proxy configuration (see Local Development section)
+
+### Reading CRM data with `@hubspot/ui-extensions/crm`
+- To read properties of the CRM record a card is displayed on, use the `useCrmProperties` hook from `@hubspot/ui-extensions/crm`. It reads the requested properties directly from the card context with no API call and no extra scopes
+- `useCrmProperties` takes an array of property names and returns `{ properties, isLoading, error }`, where `properties` is a `Record<string, string | null>`:
+  ```tsx
+  import { useCrmProperties } from '@hubspot/ui-extensions/crm';
+
+  const { properties, isLoading, error } = useCrmProperties(['renewal_date']);
+  // properties.renewal_date is a string | null
+  ```
+- Date and datetime properties come back as millisecond epoch timestamp strings (e.g. `"1735689600000"`), so convert with `Number(value)` before `new Date(...)`, or pass formatting options to the hook
+- Do NOT use `hubspot.fetch` to call the HubSpot CRM API to read the current record. `hubspot.fetch` is only for external, third-party APIs allowlisted in `permittedUrls.fetch`; using it against the CRM API is the wrong pattern and will not return the record's data
+- To write CRM data, call HubSpot APIs, or fetch data beyond the current record, use an `app-function` (serverless function) and call it from the card. Keep HubSpot API calls and secrets in the function, not the card
 
 ## Component Information
 ### General
@@ -80,6 +93,7 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 - `hubspot.fetch` requires fully qualified HTTPS URLs (e.g., `https://api.example.com/endpoint`) - relative paths like `/api/endpoint` are NOT supported
 - Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components
+- To read properties of the record the card is displayed on, use the `useCrmProperties` hook from `@hubspot/ui-extensions/crm` (see "Reading CRM data with `@hubspot/ui-extensions/crm`" above). Do not use `hubspot.fetch` to read CRM properties
 
 ### app-event
 - `app-event` components must be in the `app/app-events` directory

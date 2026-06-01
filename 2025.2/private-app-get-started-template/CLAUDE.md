@@ -34,6 +34,7 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 - The global `window` object is not available in the `card` component
 - Cannot use `window.fetch`, and instead must use the `hubspot.fetch` function provided by the `@hubspot/ui-extensions` npm package.  Any urls called with the `hubspot.fetch` function must be added to the `config.permittedUrls.fetch` array in the `app` component's hsmeta.json file
 - Only components exported from the `@hubspot/ui-extensions` npm package can be used in `card` components
+- To read properties of the record the card is displayed on, use the `useCrmProperties` hook from `@hubspot/ui-extensions/crm` (e.g. `const { properties } = useCrmProperties(['renewal_date'])`). Do not use `hubspot.fetch` to read CRM properties; `hubspot.fetch` is only for external APIs allowlisted in `permittedUrls.fetch`
 
 ### app-event
 - `app-event` components must be in the `app/app-events` directory
