@@ -1,5 +1,7 @@
 # AGENTS.md
 
+This file provides guidance to AI coding agents when working on HubSpot components
+
 IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING TO MANUALLY USE CLI COMMANDS OR BEFORE TRYING TO DO ANYTHING WITH HUBSPOT ASSETS
 
 ## HubSpot Project Information
