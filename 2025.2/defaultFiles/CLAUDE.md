@@ -83,7 +83,7 @@ IMPORTANT: IF THE 'HubSpotDev' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYI
 
 #### Available Hooks for Card Components
 
-Prefer hooks over `hubspot.fetch` — use hooks to access CRM data and extension context before falling back to `hubspot.fetch` for external HTTP requests. Hooks must be called at the component level, not inside conditionals or loops. For full parameter details search the [hooks documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/hooks.md).
+Prefer hooks over `hubspot.fetch` — use hooks to access CRM data and extension context before falling back to `hubspot.fetch` for external HTTP requests. Hooks must be called at the component level, not inside conditionals or loops. The list below may not be exhaustive — refer to the [hooks documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/hooks.md) as the source of truth for all available hooks and their parameters.
 
 **Universal hooks** (available across all extension points):
 - `useExtensionApi` - Access both context and actions from a single hook
@@ -98,7 +98,7 @@ Prefer hooks over `hubspot.fetch` — use hooks to access CRM data and extension
 
 #### Available Actions for Card Components
 
-Access actions via the `useExtensionActions` hook or the `actions` parameter from `hubspot.extend()`. For full parameter details search the [actions documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/actions.md).
+Access actions via the `useExtensionActions` hook or the `actions` parameter from `hubspot.extend()`. The list below may not be exhaustive — refer to the [actions documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/actions.md) as the source of truth for all available actions and their parameters.
 
 **Universal actions** (available across all extension points):
 - `addAlert` - Display an alert banner
@@ -114,7 +114,7 @@ Access actions via the `useExtensionActions` hook or the `actions` parameter fro
 
 #### Context Object
 
-Access context via the `useExtensionContext` hook or the `context` parameter from `hubspot.extend()`. For full field details search the [context documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/context.md).
+Access context via the `useExtensionContext` hook or the `context` parameter from `hubspot.extend()`. The list below may not be exhaustive — refer to the [context documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/context.md) as the source of truth for all available context fields.
 
 **Universal fields** (available on all extension points):
 - `location` - Extension point identifier
@@ -129,7 +129,7 @@ Access context via the `useExtensionContext` hook or the `context` parameter fro
 
 #### Logging
 
-Use the `logger` API to send custom log messages. In local development mode, logs go to the browser console only; in production they are sent to HubSpot and viewable via `hs project logs`. For full details search the [logging documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/logging.md).
+Use the `logger` API to send custom log messages. In local development mode, logs go to the browser console only; in production they are sent to HubSpot and viewable via `hs project logs`. The list below may not be exhaustive — refer to the [logging documentation](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensions/ui-extensions-sdk/logging.md) as the source of truth for all available logging methods.
 
 - `logger.info` - Informational messages
 - `logger.debug` - Debug messages
