@@ -6,9 +6,9 @@ IMPORTANT: IF THE 'HubSpot' MCP SERVER IS INSTALLED USE THE TOOLS BEFORE TRYING 
 
 ## HubSpot Project Information
 - The project configuration is in the `hsproject.json` file
-- A directory is considered a part of the project it or a directory above it contains a `hsproject.json` file
+- A directory is considered a part of the project if it or a directory above it contains a `hsproject.json` file
 - The project src directory is defined in the `srcDir` field in the `hsproject.json`
-- The project's platform version is defined in `platformVersion` in the `hs project.json`
+- The project's platform version is defined in `platformVersion` in the `hsproject.json`
 - The `platformVersion` determines what features the project has access to as well as the shape of the configuration files
 
 ## npm packages
@@ -91,13 +91,12 @@ Use the `logger` API to send custom log messages. In local development mode, log
 
 ### app-event
 - `app-event` components must be in the `app/app-events` directory
--
 ### app-object
 - `app-object` components must be in the `app/app-object` directory
 
 ### app-function
 - `app-function` components must be in the `app/functions` directory
-- `app-function` components are not available when `config.distribution` is set to `marketplace` in the `app` component `-hsmeta.son` file
+- `app-function` components are not available when `config.distribution` is set to `marketplace` in the `app` component `-hsmeta.json` file
 
 # settings
 - There can only be one `settings` component
