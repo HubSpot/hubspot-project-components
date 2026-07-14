@@ -48,7 +48,7 @@
       "type": "app-function",
       "cliSelector": "app-function-endpoint",
       "parentType": "app",
-      "supportedAuthTypes": ["oauth", "static"],
+      "supportedAuthTypes": ["static"],
       "supportedDistributions": ["private"]
     },
     {
