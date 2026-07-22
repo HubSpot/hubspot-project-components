@@ -4,6 +4,6 @@
   "author": "HubSpot",
   "license": "MIT",
   "dependencies": {
-    "@hubspot/api-client": "^7.0.1"
+    "@hubspot/api-client": "^14.0.1"
   }
 }

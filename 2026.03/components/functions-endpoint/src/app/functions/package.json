@@ -2,6 +2,6 @@
   "name": "example-function",
   "version": "0.1.0",
   "dependencies": {
-    "@hubspot/api-client": "^12.1.0"
+    "@hubspot/api-client": "^14.0.1"
   }
 }
