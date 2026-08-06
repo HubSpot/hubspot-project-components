@@ -97,11 +97,15 @@ The `-hsmeta.json` file is what the HubSpot platform reads to understand the com
 
 ### Adding or modifying a component template
 
+> **Claude Code users:** this repo includes an `/add-component` skill that handles steps 1–3 interactively. Run it via `/add-component` in Claude Code and it will prompt you for the required information.
+
 1. Find the right platform version directory (e.g. `2026.03/components/cards/`).
 2. Edit the template files. Changes take effect for any developer who adds that component after the CLI picks up the new version of this repo.
 3. If you are adding a brand new component type, also add an entry to `{version}/config.json` under `components` or `parentComponents`.
 
 ### Adding a new platform version
+
+> **Claude Code users:** this repo includes an `/add-platform-version` skill that handles steps 1–3 interactively. Run it via `/add-platform-version` in Claude Code and it will prompt you for the required information.
 
 1. Copy the most recent stable version directory (e.g. `cp -r 2026.03 2026.09`).
 2. Update `platformVersion` in `defaultFiles/hsproject.json` to match the new version string.
