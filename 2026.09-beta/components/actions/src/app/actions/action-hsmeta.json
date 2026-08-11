@@ -1,0 +1,13 @@
+{
+  "uid": "action_extension",
+  "type": "crm-bulk-action",
+  "config": {
+    "label": "New Bulk Action",
+    "entrypoint": "/app/actions/NewAction.tsx",
+    "objectTypes": [
+      "contacts"
+    ],
+    "displayMode": "PANEL",
+    "icon": "bolt"
+  }
+}

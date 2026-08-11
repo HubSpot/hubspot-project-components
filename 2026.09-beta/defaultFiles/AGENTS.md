@@ -166,6 +166,13 @@ Use the `logger` API to send custom log messages. In local development mode, log
 ### workflow-actions
 - `workflow-action` components must be in the `app/workflow-actions` directory
 
+### actions
+- `crm-bulk-action` components must be in the `app/actions` directory
+- Actions allow users to operate on multiple CRM records at once from list views
+- The `config.objectTypes` field specifies which CRM object types the action applies to (e.g. `["contacts"]`)
+- The `config.displayMode` field controls how the action UI is rendered (e.g. `"PANEL"`)
+- The `config.icon` field sets the icon shown alongside the action label. The icon names correspond to the allowed name prop values of the UI Extensions Icon component.
+
 ## HubSpot CLI commands
 - All the commands and subcommands have a `--help` argument that provides details on the command and it's arguments
 - The help output is standard yargs output

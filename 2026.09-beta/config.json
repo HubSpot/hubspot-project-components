@@ -191,6 +191,20 @@
       "supportedDistributions": [
         "marketplace"
       ]
+    },
+    {
+      "path": "components/actions",
+      "label": "Bulk Actions",
+      "type": "crm-bulk-action",
+      "parentType": "app",
+      "supportedAuthTypes": [
+        "oauth",
+        "static"
+      ],
+      "supportedDistributions": [
+        "private",
+        "marketplace"
+      ]
     }
   ]
 }
