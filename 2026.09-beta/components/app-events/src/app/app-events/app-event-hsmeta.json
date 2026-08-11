@@ -4,6 +4,7 @@
   "config": {
     "name": "Webinar Registration",
     "objectType": "CONTACT",
+    "description": "Webinar Registration app event",
     "headerTemplate": "Registered for [{{webinarName}}](https://mywebinarsystem/webinar/{{webinarId}})",
     "detailTemplate": "Registration occurred at {{#formatDate timestamp}}{{/formatDate}}",
     "properties": [
