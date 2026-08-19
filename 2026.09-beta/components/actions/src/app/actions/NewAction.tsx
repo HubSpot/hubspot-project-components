@@ -1,14 +1,42 @@
-import { EmptyState, Text } from '@hubspot/ui-extensions';
+import {
+  BulkActionsContext,
+  EmptyState,
+  ExtensionPointApiActions,
+  List,
+  Text,
+} from '@hubspot/ui-extensions';
 import { hubspot } from '@hubspot/ui-extensions';
 
-hubspot.extend<'crm.bulkAction'>(() => <ActionExtension />);
+interface ActionExtensionProps {
+  context: BulkActionsContext;
+  actions: ExtensionPointApiActions<'crm.bulkActions'>;
+}
 
-const ActionExtension = () => (
-  <EmptyState
-    title="Build your action here!"
-    layout="vertical"
-    imageName="building"
-  >
-    <Text>Action extensions can operate on multiple records at once.</Text>
-  </EmptyState>
+hubspot.extend<'crm.bulkActions'>(
+  ({ context, actions }: ActionExtensionProps) => (
+    <ActionExtension context={context} actions={actions} />
+  ),
 );
+
+const ActionExtension = ({ context, actions }: ActionExtensionProps) => {
+  console.log({ context, actions });
+
+  return (
+    <EmptyState
+      title="Build your action here!"
+      layout="vertical"
+      imageName="building"
+    >
+      <Text>
+        Action extensions provide you the context to operate on multiple records
+        at once. You have {context.crm.objectIds.length} records selected:
+      </Text>
+
+      <List>
+        {context.crm.objectIds.map((objectId: string | number) => (
+          <Text key={objectId}>{objectId}</Text>
+        ))}
+      </List>
+    </EmptyState>
+  );
+};
