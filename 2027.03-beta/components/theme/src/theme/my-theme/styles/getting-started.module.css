@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #ff7a59;
+  --accent-color: #2d3e50;
+}
+
+.wrapper {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  background-color: var(--accent-color);
+  height: 50vh;
+  min-height: 500px;
+
+  & pre {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  & .buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    & a {
+      text-decoration: none;
+      color: white;
+      background-color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  }
+}
