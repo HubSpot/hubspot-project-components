@@ -34,22 +34,15 @@ cp -r {source} {target}
 
 ## Step 4: Update version references
 
-Set the `platformVersion` field to the full target directory name, keeping the `-beta` suffix when there is one. Every existing version directory follows this convention: `2026.09-beta/defaultFiles/hsproject.json` sets `"platformVersion": "2026.09-beta"`, not `"2026.09"`.
+Replace EVERY occurrence of the source version string with the target version string across the whole target directory. Do not work from a list of known files. The version turns up in `hsproject.json`, in `defaultFiles/*.md` prose, and inside documentation links, and new files get added over time, so any fixed list goes stale.
 
-Two files carry the version, and missing the second one ships a getting-started template still pinned to the old version:
-
-- `{target}/defaultFiles/hsproject.json`
-- `{target}/private-app-get-started-template/hsproject.json`
-
-```json
-{
-  "name": "My Project",
-  "srcDir": "src",
-  "platformVersion": "{target}"
-}
+```bash
+grep -rn '{source}' {target}
 ```
 
-Scan `{target}/defaultFiles/HUBSPOT_PROJECTS.md` for any hard-coded version references and update them to the new version.
+Update every hit, then re-run the same grep and confirm it returns nothing. That check is the actual acceptance criterion for this step.
+
+Note the value is the FULL directory name, keeping the `-beta` suffix when there is one. Every existing version directory follows this convention: `2026.09-beta/defaultFiles/hsproject.json` sets `"platformVersion": "2026.09-beta"`, not `"2026.09"`.
 
 ## Step 5: Report what was created
 
