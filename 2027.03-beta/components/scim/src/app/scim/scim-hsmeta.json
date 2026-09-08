@@ -1,0 +1,7 @@
+{
+  "uid": "scim",
+  "type": "scim",
+  "config": {
+    "roleSyncEnabled": false
+  }
+}
