@@ -89,12 +89,12 @@ Prefer hooks over `hubspot.fetch` — use hooks to access CRM data and extension
 - `useExtensionApi` - Access both context and actions from a single hook
 - `useExtensionContext` - Access contextual information about the extension environment (portal, user, extension metadata)
 - `useExtensionActions` - Access all available actions for the current extension point
-- `useCrmSearch` - Search CRM records
+- `useRecordSearch` - Search CRM records
 - `useDebounce` - Debounce a rapidly-changing value
 
 **CRM-specific hooks** (available in `crm.record.tab`, `crm.record.sidebar`, `crm.preview`, `helpdesk.sidebar` extension points):
-- `useCrmProperties` - Fetch properties from the current CRM record
-- `useAssociations` - Fetch associated CRM records
+- `useRecordPropertiesCurrent` - Fetch properties from the current CRM record
+- `useRecordAssociationsCurrent` - Fetch associated CRM records
 
 #### Available Actions for Card Components
 
